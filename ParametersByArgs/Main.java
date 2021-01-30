@@ -2,10 +2,8 @@ public class Main {
 
     public static void main(String[] args) {
 		
-		for (int i=0; i<args.length; i++) {
-			System.out.println("You wrote (by cmd): "+args[i]);
-		}
-		System.out.print("Exiting...");
+	System.out.println("You wrote (by cmd): "+args[0]);
+	System.out.print("Exiting...");
     }  
 }
 
