@@ -1,17 +1,17 @@
 <h1>Java Challenges</h1>
+<hr><br>
+
 <div class="row">
   <div class="coluna">
-    <img src="imagem1" alt="descrição da imagem" style="width:100%">
+    <img src="img/ScreenS-Param-on-CMD.PNG" style="width:100%">
   </div>
   <div class="coluna">
-    <img src="imagem2" alt="descrição da imagem" style="width:100%">
+    <img src="img/ScreenS-InnerScanner-on-CMD.PNG" style="width:100%">
   </div>
-  <div class="coluna">
-    <img src="imagem3" alt="descrição da imagem" style="width:100%">
-  </div></div>
+</div>
 
 <style>
-.coluna{float: left; width: 33.33%;}
+.coluna{float: left; width: 50%;}
 .row::after {content: ""; clear: both; display: table;}
 
 @media screen and (max-width: 500px) {.column {width: 100%;}
