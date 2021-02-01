@@ -1,22 +1,8 @@
 <h1>Java Challenges</h1>
+<img src="img/ScreenS-InnerScanner-on-CMD.PNG">
+<img src="img/ScreenS-Param-on-CMD.PNG">
+
 <hr><br>
-
-<div class="row">
-  <div class="coluna">
-    <img src="img/ScreenS-Param-on-CMD.PNG" style="width:100%">
-  </div>
-  <div class="coluna">
-    <img src="img/ScreenS-InnerScanner-on-CMD.PNG" style="width:100%">
-  </div>
-</div>
-
-<style>
-.coluna{float: left; width: 50%;}
-.row::after {content: ""; clear: both; display: table;}
-
-@media screen and (max-width: 500px) {.column {width: 100%;}
-</style>
-
 <h2>Abount this...</h2>
 <p>This Repository focused on the realization of Cases, challenges and applications for specific use in Java.</p>
 
