@@ -9,7 +9,7 @@
 <hr><br>
 <h2>Why?</h2>
 <p>Made to solve (training) programming logic issues.</p>
-<blue><b>LinkdIn</b></blue> https://www.linkedin.com/in/ryan-castro-9149561b8/
+<blue><b>LinkdIn</b></blue> https://www.linkedin.com/in/ryan-castro-ferreira/
 
 <hr><br>
 <h2>Built jPanel</h2>
