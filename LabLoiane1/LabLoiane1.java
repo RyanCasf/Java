@@ -50,23 +50,47 @@ class LabLoiane1 {
 			System.exit(0);
 		}
 
-		// tam. of file MB - vel. link on Mbps
+		// Farenheit to Celsius
 		try{
-			System.out.print("Time for download of the file");
-			double fileArm = Double.parseDouble(JOptionPane.showInputDialog("Type file (MB): ")); // 1024 Kbps
-			double linkVel = Double.parseDouble(JOptionPane.showInputDialog("Type Link (Mbps): ")); //MB por segundo 
-			System.out.println(fileArm +" and " +linkVel);
+			System.out.print("Farenheit to Celsius");
+			double farenheit = Double.parseDouble(JOptionPane.showInputDialog("Type graus in Farenheit: "));
+			//System.out.println("Farenheit: "+farenheit+"ºF\nCelsius: "+(5 * (farenheit-32) / 9)+"ºC\nKelvin: "+(5 * (farenheit-32) / 9 + 272)+"K");			
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, "Fill in correctly!\n\n" +"Erro: "+e);
 			System.out.print("\n\tExiting...");
 			System.exit(0);
 		}
 
-		// Farenheit to Celsius
+		// Simple condition Age
 		try{
-			System.out.print("Farenheit to Celsius");
-			double farenheit = Double.parseDouble(JOptionPane.showInputDialog("Type graus in Farenheit: "));
-			//System.out.println("Farenheit: "+farenheit+"ºF\nCelsius: "+(5 * (farenheit-32) / 9)+"ºC\nKelvin: "+(5 * (farenheit-32) / 9 + 272)+"K");			
+        	Scanner Scan = new Scanner(System.in);
+	        System.out.println("AGE");
+        
+    	    System.out.println("Enter your age:");
+    	    int age = Scan.nextInt();
+        
+            if (age < 0) {
+                System.out.println("Enter invalid!");
+            } else if (age < 18) {
+                System.out.println("Under age");
+            } else if (age < 65) {
+                System.out.println("Adult");
+            } else {
+                System.out.println("Old");
+            }
+
+        } catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "Fill in correctly!\n\n" +"Erro: "+e);
+			System.out.print("\n\tExiting...");
+			System.exit(0);
+		}
+
+		// tam. of file MB - vel. link on Mbps
+		try{
+			System.out.print("Time for download of the file");
+			double fileArm = Double.parseDouble(JOptionPane.showInputDialog("Type file (MB): ")); // 1024 Kbps
+			double linkVel = Double.parseDouble(JOptionPane.showInputDialog("Type Link (Mbps): ")); //MB por segundo 
+			System.out.println(fileArm +" and " +linkVel);
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, "Fill in correctly!\n\n" +"Erro: "+e);
 			System.out.print("\n\tExiting...");
