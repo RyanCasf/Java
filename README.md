@@ -27,5 +27,6 @@ By RYAN CASTRO FERREIRA,<br>
 
 <hr><br>
 <h2>Built Auxiliary class</h2>
-<p>Desenvolviment with a local own bibliotec, class Convert, Input and Output</p>
+<p>Desenvolviment with a local own bibliotec, class Convert, Input and Output<br>
+Without any import local because of the class use</p>
 <img src="Controle_empresa(ClassesAuxiliares)/Astah/ScreenS-ClasseDiagram.PNG">
