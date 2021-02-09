@@ -90,7 +90,7 @@ class LabLoiane1 {
 			System.out.print("Time for download of the file");
 			double fileArm = Double.parseDouble(JOptionPane.showInputDialog("Type file (MB): ")); // 1024 Kbps
 			double linkVel = Double.parseDouble(JOptionPane.showInputDialog("Type Link (Mbps): ")); //MB por segundo 
-			System.out.println(fileArm +" and " +linkVel);
+			System.out.println("Time: "+(fileArm/linkVel));
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, "Fill in correctly!\n\n" +"Erro: "+e);
 			System.out.print("\n\tExiting...");

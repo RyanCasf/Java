@@ -30,3 +30,8 @@ By RYAN CASTRO FERREIRA,<br>
 <p>Desenvolviment with a local own bibliotec, class Convert, Input and Output<br>
 Without any import local because of the class use</p>
 <img src="Controle_empresa(ClassesAuxiliares)/Astah/ScreenS-ClasseDiagram.PNG">
+
+<hr><br>
+<h2>Diagrams and Projects made</h2>
+<img src="img/jv02.PNG">
+<img src="img/jv03.PNG">
