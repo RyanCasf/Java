@@ -40,10 +40,10 @@ Without any import local because of the class use</p>
 		<li><b>Subclass (child) </b> - The class that inherits from another class;</li>
 		<li><b>Superclass (mom / dad) </b> - The class being inherited from.</li>
 	</ul>
-</p>
+</p> <br>
 
 <img src="img/jv03.PNG">
-<p>When there is an inheritance of objects, to call the superclass.</p>
+<p>When there is an inheritance of objects, to call the superclass.</p> <br>
 
 <img src="img/question.PNG">
-<p>Static method with math return args. Belongs to the class, rather than an object.</p>
+<p>Static method with math return args. Belongs to the class, rather than an object.</p> <br>
