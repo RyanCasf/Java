@@ -33,6 +33,17 @@ Without any import local because of the class use</p>
 
 <hr><br>
 <h2>Diagrams and Projects made</h2>
+
 <img src="img/jv02.PNG">
+<p>Inheritance, to inherit attributes and methods from one class to another. <br>
+	<ul>
+		<li><b>Subclass (child) </b> - The class that inherits from another class;</li>
+		<li><b>Superclass (mom / dad) </b> - The class being inherited from.</li>
+	</ul>
+</p>
+
 <img src="img/jv03.PNG">
+<p>When there is an inheritance of objects, to call the superclass.</p>
+
 <img src="img/question.PNG">
+<p>Static method with math return args. Belongs to the class, rather than an object.</p>
