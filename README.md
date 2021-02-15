@@ -47,3 +47,10 @@ Without any import local because of the class use</p>
 
 <img src="img/question.PNG">
 <p><b>Static</b> method with math return args. Belongs to the class, rather than an object.</p> <br>
+
+<img src="apuracaoEleitoral/img/Sequência.PNG">
+<img src="apuracaoEleitoral/img/ClassDiagram.PNG">
+<img src="apuracaoEleitoral/img/ScreenS-Home.PNG">
+<p><b><i>TRE case</i></b> - Justify, an situation specific of vote. <br>
+It's solution exercise in time of elections, but there are "privates" determinitions. <br>
+With progress of Struture UML, following Design Thinking, your desenvolviment using POO and mix jPanel/jFrame with more piece of JO.</p>
