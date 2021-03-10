@@ -18,5 +18,5 @@ public class main{
 	String lastName = inner.next();
 
 	System.out.print("\n Full name: " +name +" " +lastName +"\n");
-    }
+    }+
 }
