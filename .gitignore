@@ -1,2 +1,12 @@
 Bibliographic
-/ClinicaMedica/
+ClinicaMedica
+.classpath
+.gitignore
+.project
+README.md
+debug.log
+reservaHotelaria
+apuracaoEleitoral
+Veiculo_Multas
+Contato
+Controle_empresa(ClassesAuxiliares)
