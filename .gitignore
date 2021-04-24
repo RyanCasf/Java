@@ -1,8 +1,8 @@
 Bibliographic/
 ClinicaMedica/
-.classpath
-.gitignore
-.project
+*.classpath
+*.gitignore
+*.project
 README.md
 debug.log
 reservaHotelaria/
