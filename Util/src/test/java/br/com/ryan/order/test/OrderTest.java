@@ -2,8 +2,9 @@ package br.com.ryan.order.test;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
+
 import org.junit.jupiter.api.Test;
+
 import br.com.ryan.order.OrderDesc;
 
 public class OrderTest 
@@ -11,7 +12,6 @@ public class OrderTest
 	@Test
 	public void verificarPosicoesAscToDec() throws Exception
 	{
-		Random random = new Random();
 		List<Integer> temp = new ArrayList<Integer>();
 		
 		temp.add(1);
