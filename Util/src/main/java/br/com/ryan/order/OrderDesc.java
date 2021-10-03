@@ -5,9 +5,9 @@ import java.util.List;
 
 public class OrderDesc 
 {
-	public static int[] posicoesDecrescente(List<Integer> vetor, int tamanho)
+	public static int[] posicoesAscToDec(List<Integer> vetor)
 	{
-		int[] posicaoDescrescente = new int[tamanho];
+		int[] posicaoDescrescente = new int[vetor.size()];
 			
 		for (int i=0; i<vetor.size(); i++)
 		{
@@ -38,33 +38,5 @@ public class OrderDesc
 		}
 		
 		return temp;
-	}
-	
-	public static void main(String[] args) 
-	{
-		final int tamanho = 10;
-		List<Integer> vetor = fetchVetor(tamanho);
-		int[] posicaoDescrescente = new int[tamanho];
-		
-		for (int i=0; i<vetor.size(); i++)
-		{
-			posicaoDescrescente[i] = 0;
-			
-			for (int j=0; j<vetor.size(); j++)
-			{
-				if (vetor.get(i).intValue() == vetor.get(j).intValue()) {
-					continue;
-				}
-				
-				if (vetor.get(i).intValue() < vetor.get(j).intValue()) {
-					posicaoDescrescente[i]++;
-				}
-			}
-		}
-		
-		for(int i=0; i<vetor.size(); i++)
-		{
-			System.out.println(vetor.get(posicaoDescrescente[i]));
-		}
 	}
 }
