@@ -8,7 +8,8 @@ public class Textos
 		System.out.println("Olá, meu nome é "+entrada1.toUpperCase()+"!");
 		
 		// Update in JDK 10v  ->  Deve ser sempre 'inicializada'
-		var entrada2 = "programador Trainne";
+		// var entrada2 = "programador Trainne";
+		String entrada2 = "programador Trainne";
 		System.out.println("Eu trabalho como "+entrada2.toString());
 		
 		StringBuffer sb = new StringBuffer();

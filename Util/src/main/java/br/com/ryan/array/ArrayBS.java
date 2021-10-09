@@ -16,9 +16,7 @@ public class ArrayBS
 	
 	public static void main(String[] args) 
 	{
-		ArrayBS a = new ArrayBS();
-		
-		for (String nome : a.getNomes())
+		for (String nome : ArrayBS.getNomes())
 		{
 			System.out.print(nome);
 		}

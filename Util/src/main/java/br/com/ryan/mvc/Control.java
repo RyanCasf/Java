@@ -53,6 +53,7 @@ public class Control
 		}
 		while (opcao != null && opcao.intValue() != 0);
 		
+		scanner.close();
 	}
 	
 	public static void main(String[] args) 
