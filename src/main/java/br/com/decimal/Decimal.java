@@ -12,6 +12,9 @@ public class Decimal
 		declaracaoBigDecimal(new BigDecimal(0.2)); // d
 		declaracaoBigDecimal(new BigDecimal(0.2f));
 		declaracaoBigDecimal(new BigDecimal("0.2"));
+		declaracaoBigDecimal(BigDecimal.valueOf(0.2)); // toString new Big
+		
+		System.out.println("ToS.: "+toBigDecimal("s"));
 	}
 	
 	public static void erroConversaoBinaria(float floatValue, double doubleValue)
@@ -23,5 +26,17 @@ public class Decimal
 	public static void declaracaoBigDecimal(BigDecimal bigDecimalValue)
 	{
 		System.out.println(bigDecimalValue);
+	}
+	
+	private static BigDecimal toBigDecimal(Object value)
+	{
+		try 
+		{
+			return new BigDecimal(value.toString());
+		} 
+		catch (Exception e) 
+		{
+			return BigDecimal.ZERO;
+		}
 	}
 }
