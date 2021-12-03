@@ -33,6 +33,7 @@ public class Erro
 			System.out.println("ERROR 2 \n");
 		}
 		
+		System.out.println(numero);
 		// numero = 10 / 0;
 	}
 }
