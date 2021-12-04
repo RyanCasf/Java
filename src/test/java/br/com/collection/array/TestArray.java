@@ -26,28 +26,34 @@ public class TestArray
 		Assert.assertEquals(A, a);
 	}
 	
-	@Test
-	public void testAdicionar()
+	@Test(expected = Exception.class)
+	public void testAdicionar() throws Exception
 	{
 		Array a = new Array(10);
 	
 		List<String> listaV = new ArrayList<String>();
 		Integer value;
 		
-		for (int i=0; i<10; i++) 
+		for (int i=0; i<12; i++) 
 		{
 			value = random.nextInt(10);
-
 			listaV.add(value.toString());
-			System.out.println(i+" : "+value);
 			a.adicionar(value.toString());
 		}
 		
-		Assert.assertTrue(a.obter(0).equals(listaV.get(0)));
+		boolean iguais = true;
+		for (int i=0; i<a.tamanho(); i++)
+		{
+			if (!a.obter(i).equals(listaV.get(i))) {
+				iguais = false;
+			}
+		}
+		
+		Assert.assertTrue(iguais);
 	}
 	
 	@Test
-	public void testObter()
+	public void testObter() throws Exception
 	{
 		Array a = new Array(5);
 		a.adicionar("A");
@@ -71,5 +77,38 @@ public class TestArray
 		Array a = new Array(0);
 		String value = a.obter(-1);
 		Assert.assertNull(value);
+	}
+	
+	@Test
+	public void testAdicionarIndex() throws Exception
+	{
+		Array a = new Array(10);
+		
+		List<String> listaV = new ArrayList<String>();
+		Integer value;
+		
+		for (int i=0; i<10; i++) 
+		{
+			value = random.nextInt(10);
+			listaV.add(value.toString());
+			a.adicionar(i, value.toString());
+		}
+		
+		boolean iguais = true;
+		for (int i=0; i<listaV.size() ;i++)
+		{
+			if (!a.obter(i).equals(listaV.get(i))) {
+				iguais = false;
+			}
+		}
+		
+		Assert.assertTrue(iguais);
+	}
+	
+	@Test(expected = Exception.class)
+	public void testAdicionarIndexInexistente() throws Exception
+	{
+		Array a = new Array(10);
+		a.adicionar(11, "Algo");
 	}
 }

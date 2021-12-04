@@ -12,8 +12,13 @@ public class Array implements ArrayInterface
 		posicao = 0;
 	}
 	
-	public void adicionar(String elemento) 
+	public void adicionar(String elemento) throws Exception 
 	{
+		if (!existe(posicao+1)) 
+		{
+			throw new Exception("Limite da lista, incapaz de adicionar!");
+		}
+		
 		for (int i=posicao; i<tamanho(); i++) 
 		{
 			if (array[i] == null)
@@ -25,14 +30,27 @@ public class Array implements ArrayInterface
 		}
 	}
 	
-	public String obter(int index)
+	public void adicionar(int index, String elemento) throws Exception
 	{
-		return index >= 0 && index <= tamanho() ? array[index] : null;
+		if (existe(index)) {
+			array[index] = elemento;
+		} else {
+			throw new Exception("Index desconhecido!");
+		}
 	}
 	
+	public String obter(int index)
+	{
+		return existe(index) ? array[index] : null;
+	}
+
 	public int tamanho()
 	{
 		return array.length;
+	}
+	
+	private boolean existe(int index) {
+		return (index >= 0 && index <= tamanho());
 	}
 	
 	private int estoutoMemoriaCapacidade(int capacidade) {
