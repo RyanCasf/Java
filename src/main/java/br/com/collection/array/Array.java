@@ -2,61 +2,37 @@ package br.com.collection.array;
 
 public class Array implements ArrayInterface
 {
-	private int capacidade;
 	private String[] array;
+	private int posicao;
 	
 	public Array(int capacidade) 
 	{
 		capacidade = estoutoMemoriaCapacidade(capacidade);
 		array = new String[capacidade];
+		posicao = 0;
 	}
 	
 	public void adicionar(String elemento) 
 	{
-		array[0] = elemento.toString();
-	}
-
-	public void adicionar(int index, String elemento) 
-	{
-		array[index] = elemento;
-	}
-
-	public String obter(String elemento) 
-	{
-		
-		return null;
-	}
-
-	public String obter(int index) 
-	{
-		return array[index].toString();
-	}
-
-	public boolean isVazia() 
-	{
-		
-		return false;
-	}
-
-	public int tamanho()
-	{
-		return array.length-1;
+		for (int i=posicao; i<tamanho(); i++) 
+		{
+			if (array[i] == null)
+			{
+				posicao = i+1;
+				array[i] = elemento;
+				break;
+			}
+		}
 	}
 	
-	public void limpar() 
+	public String obter(int index)
 	{
-		for (String s : array)
-		{
-			s = "";
-		}
+		return index >= 0 && index <= tamanho() ? array[index] : null;
 	}
-
-	public void excluir(int index) 
+	
+	public int tamanho()
 	{
-		if (index <= tamanho()) 
-		{
-			array[index] = null;
-		}
+		return array.length;
 	}
 	
 	private int estoutoMemoriaCapacidade(int capacidade) {
@@ -65,8 +41,6 @@ public class Array implements ArrayInterface
 			if (capacidade <= 0) {
 				capacidade = capacidade * -1;
 			}
-			
-			this.capacidade = capacidade;
 		}
 		catch (OutOfMemoryError e) 
 		{
