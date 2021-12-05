@@ -14,6 +14,7 @@ public abstract class Construtor
 	
 	public static void main(String[] args) 
 	{
-		Construtor construtor;
+		@SuppressWarnings("unused")
+		final Construtor construtor;
 	}
 }
