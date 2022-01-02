@@ -1,0 +1,10 @@
+package br.com.estatico.aplication;
+
+public class Teste 
+{
+	int	x = 37;
+	
+	public static void main(String[] args) {
+		// System.out.println(x);  -- ERROR COMPILER
+	}
+}
