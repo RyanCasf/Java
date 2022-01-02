@@ -1,5 +1,7 @@
 package br.com.estatico.aplication;
 
+import java.util.GregorianCalendar;
+
 public class Conta 
 {
 	private static int chave_conta;
@@ -34,7 +36,11 @@ public class Conta
 	
 	public java.util.Date getData() { return this.data; }
 	public void setData(java.util.Date data) {
-		// 31/2/2021
+		GregorianCalendar gc = new GregorianCalendar(2021, 2, 31);
+		if (data.equals(gc.getTime())) {
+			this.data = null;
+		}
+		
 		this.data = data; 
 	}
 }
