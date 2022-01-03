@@ -8,8 +8,8 @@ import java.util.Random;
 public class Queues
 {
 	private static final String TEMA = "\tFirst In First Out!\n";
-	
-	public static void main(String a[]) 
+
+	public static void main(String[] args)
 	{
 		System.out.println(TEMA.toUpperCase());
 		

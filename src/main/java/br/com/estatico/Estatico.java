@@ -17,12 +17,10 @@ public class Estatico
 		System.out.println(Estatico.getId());
 		System.out.println(Estatico.getId());
 		
-		Estatico estatico;
 		System.out.println(Estatico.getId());
 		
-		estatico = new Estatico();
 		System.out.println(Estatico.getId()); // 1
 		
-		System.out.println(new Estatico().getId()); // 2
+		// System.out.println(new Estatico().getId()); // 2
 	}
 }
