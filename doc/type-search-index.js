@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"br.com.collection.array","l":"ArrayInterface"}];updateSearchResults();

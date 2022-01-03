@@ -1,10 +1,19 @@
 package br.com.collection.array;
 
+/**
+ * interface para methods
+ * @author ryanc
+ */
 public class Array implements ArrayInterface
 {
 	private String[] array;
 	private int posicao;
 	
+	/**
+	 * Criação do escopo incial do array
+	 * @author Ryan Castro Ferreira
+	 * @param capacidade int para dar tamanho ao escopo
+	 */
 	public Array(int capacidade) 
 	{
 		capacidade = estoutoMemoriaCapacidade(capacidade);
@@ -12,6 +21,11 @@ public class Array implements ArrayInterface
 		posicao = 0;
 	}
 	
+	/**
+	 * Adição de novo valor
+	 * @exception Exception erro de limite de capacidade
+	 * @author Ryan Castro Ferreira
+	 */
 	public void adicionar(String elemento) throws Exception 
 	{
 		if (!existe(posicao+1)) 
@@ -30,6 +44,12 @@ public class Array implements ArrayInterface
 		}
 	}
 	
+	/**
+	 * Substituição de valors por seu posição
+	 * @exception Exception para posição inválida
+	 * @param index int de posição
+	 * @param elemento String de valor de substituição
+	 */
 	public void adicionar(int index, String elemento) throws Exception
 	{
 		if (existe(index)) {
@@ -39,17 +59,30 @@ public class Array implements ArrayInterface
 		}
 	}
 	
+	/**
+	 * rr a posição ou null para inexitência
+	 * @author ryanc
+	 */
 	public String obter(int index)
 	{
 		return existe(index) ? array[index] : null;
 	}
 
+	/**
+	 * rr para size ocupado
+	 * @author ryanc
+	 */
 	public int tamanho()
 	{
 		return array.length;
 	}
 	
-	private boolean existe(int index) {
+	/**
+	 * return is para Empty
+	 * @param index posição para existência em escopo
+	 * @return boolean to is
+	 */
+	public boolean existe(int index) {
 		return (index >= 0 && index <= tamanho());
 	}
 	
