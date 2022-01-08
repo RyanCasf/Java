@@ -15,6 +15,7 @@ public class Scan
 			sc = new Scanner(file);
 			while (sc.hasNextLong()) {
 				long aLong = sc.nextLong();
+				System.out.println(aLong);
 			}
 			
 			sc.close();
