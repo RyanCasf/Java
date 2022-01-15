@@ -17,12 +17,8 @@ public class Scan
 				long aLong = sc.nextLong();
 				System.out.println(aLong);
 			}
-			
-			sc.close();
 		} 
-		catch (IOException e) 
-		{
-			System.out.println(e.getMessage());
-		}
+		catch (IOException e) { System.out.println(e.getMessage()); }
+		finally { sc.close(); }
 	}
 }

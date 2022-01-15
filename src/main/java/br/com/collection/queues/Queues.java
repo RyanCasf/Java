@@ -7,6 +7,7 @@ import java.util.Random;
 
 public class Queues
 {
+	private static final Random random = new Random();
 	private static final String TEMA = "\tFirst In First Out!\n";
 
 	public static void main(String[] args)
@@ -21,7 +22,7 @@ public class Queues
 	{
 		System.out.println("\nORDER BY ASC");
 		
-		Queue<Double> queueOrder = new PriorityQueue<Double>();
+		Queue<Double> queueOrder = new PriorityQueue<>();
 		//Queue<Double> queueOrderDesc = new PriorityQueue<Double>(Collections.reverseOrder());
 		queueOrder.addAll(fetchQueue(10));
 		
@@ -46,14 +47,10 @@ public class Queues
 	
 	private static Queue<Double> fetchQueue(int tamanho)
 	{
-		Random random = new Random();
-		Queue<Double> queue = new LinkedList<Double>();
-		
-		for (int i=0; i<tamanho; i++)
-		{
+		Queue<Double> queue = new LinkedList<>();
+		for (int i=0; i<tamanho; i++) {
 			queue.offer(random.nextDouble());
 		}
-		
 		return queue;
 	}
 }
