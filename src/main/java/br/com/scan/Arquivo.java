@@ -4,21 +4,23 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Scan 
+public class Arquivo 
 {
+	private static final String URI = "C:\\Users\\ryanc\\filename.txt";
+	
 	public static void main(String[] args)  
 	{
-		Scanner sc = null;
 		try {
-			File file = new File("C:\\Users\\ryanc\\filename.txt");
+			Scanner sc;
+			File file = new File(URI);
 			
 			sc = new Scanner(file);
 			while (sc.hasNextLong()) {
 				long aLong = sc.nextLong();
 				System.out.println(aLong);
 			}
+			sc.close();
 		} 
 		catch (IOException e) { System.out.println(e.getMessage()); }
-		finally { sc.close(); }
 	}
 }
