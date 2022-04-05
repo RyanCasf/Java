@@ -6,20 +6,17 @@ import java.util.Random;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TestArray 
-{
-	static Random random = new Random();
+public class TestArray {
+	private final static Random random = new Random();
 	
 	@Test(expected = OutOfMemoryError.class)
-	public void testInicializacaoEstouroMemoria()
-	{
+	public void testInicializacaoEstouroMemoria() {
 		Array a = new Array(Integer.MAX_VALUE);
 		Assert.assertEquals(a, a);
 	}
 	
 	@Test(expected = AssertionError.class)
-	public void testInicializacaoNegativo()
-	{
+	public void testInicializacaoNegativo() {
 		Array a = new Array(-1);
 		Array A = null;
 		
@@ -27,8 +24,7 @@ public class TestArray
 	}
 	
 	@Test(expected = Exception.class)
-	public void testAdicionar() throws Exception
-	{
+	public void testAdicionar() throws Exception {
 		Array a = new Array(10);
 	
 		List<String> listaV = new ArrayList<String>();
@@ -53,8 +49,7 @@ public class TestArray
 	}
 	
 	@Test
-	public void testObter() throws Exception
-	{
+	public void testObter() throws Exception {
 		Array a = new Array(5);
 		a.adicionar("A");
 		a.adicionar("B");
@@ -64,24 +59,21 @@ public class TestArray
 	}
 	
 	@Test
-	public void testObterInexistenteUP()
-	{
+	public void testObterInexistenteUP() {
 		Array a = new Array(0);
 		String value = a.obter(1);
 		Assert.assertNull(value);
 	}
 	
 	@Test
-	public void testObterInexistenteDOWN()
-	{
+	public void testObterInexistenteDOWN() {
 		Array a = new Array(0);
 		String value = a.obter(-1);
 		Assert.assertNull(value);
 	}
 	
 	@Test
-	public void testAdicionarIndex() throws Exception
-	{
+	public void testAdicionarIndex() throws Exception {
 		Array a = new Array(10);
 		
 		List<String> listaV = new ArrayList<String>();
@@ -95,19 +87,16 @@ public class TestArray
 		}
 		
 		boolean iguais = true;
-		for (int i=0; i<listaV.size() ;i++)
-		{
+		for (int i=0; i<listaV.size() ;i++) {
 			if (!a.obter(i).equals(listaV.get(i))) {
 				iguais = false;
 			}
 		}
-		
 		Assert.assertTrue(iguais);
 	}
 	
 	@Test(expected = Exception.class)
-	public void testAdicionarIndexInexistente() throws Exception
-	{
+	public void testAdicionarIndexInexistente() throws Exception {
 		Array a = new Array(10);
 		a.adicionar(11, "Algo");
 	}

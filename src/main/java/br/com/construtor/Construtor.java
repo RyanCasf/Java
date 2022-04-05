@@ -7,13 +7,11 @@ public abstract class Construtor
 		System.out.println("Construtor instanciado!");
 	}
 	
-	static
-	{
+	static {
 		System.out.println("Construtor estetico!");
 	}
 	
-	public static void main(String[] args) 
-	{
+	public static void main(String[] args) {
 		@SuppressWarnings("unused")
 		final Construtor construtor;
 	}

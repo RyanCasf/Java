@@ -5,9 +5,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-class LogController 
-{
-	private static final String[] DIRS = {null, "C:\\Users\\ryanc\\OneDrive\\Área de Trabalho\\LOG"};
+class LogController  {
+	private static final String[] DIRS = {null, "C:\\Users\\ryanc\\OneDrive\\ï¿½rea de Trabalho\\LOG"};
 	private static PrintWriter printWriter;
 	private static FileReader fileReader;
 	
@@ -48,24 +47,21 @@ class LogController
 		String nomeArquivoUnificado = caminhoDiretorio+File.separator+"LOG.txt";
 		printWriter = new PrintWriter(nomeArquivoUnificado);
 		
-		for (String nomeArquivo : nomeTodosArquivos) {
+		for (String nomeArquivo : nomeTodosArquivos)
 			escreverLog(caminhoDiretorio, nomeArquivo);
-		}
 	}
 
-	private static void escreverLog(String caminhoDiretorio, String nomeArquivo) throws IOException 
+	private static void escreverLog(String diretorio, String nomeArquivo) throws IOException
 	{
 		if (!nomeArquivo.contains(".txt") && !nomeArquivo.contains(".log")
-				|| nomeArquivo.equals("LOG.txt")) {
+				|| nomeArquivo.equals("LOG.txt"))
 			return;
-		}
 		
-		fileReader = new FileReader(caminhoDiretorio+File.separator+nomeArquivo);
+		fileReader = new FileReader(diretorio+File.separator+nomeArquivo);
+
 		int i;
-		
-		while ((i = fileReader.read()) != -1) {
-		    printWriter.print((char)i);
-		}
+		while ((i = fileReader.read()) != -1)
+		    printWriter.print((char) i);
 		
 		printWriter.flush();
 	}
