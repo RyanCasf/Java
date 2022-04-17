@@ -1,10 +1,8 @@
 package br.com.ryan.estaticolazy.teste;
 
-import org.junit.jupiter.api.Test;
-
 public class Estatico 
 {
-	@Test
+//	@Test
 	public void gerarInicializador()
 	{
 		br.com.ryan.estaticolazy.Estatico estatico;

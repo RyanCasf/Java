@@ -1,4 +1,4 @@
-package br.com.ryan.file.test;
+package Util.src.test.java.br.com.ryan.file.test;
 
 import java.io.File;
 
@@ -12,7 +12,6 @@ public class FileTest
 	public void visualizarDiretorio()
 	{
 		String diretoria = "C:/Users/ryanc/OneDrive/Documentos";
-		
 		File file = new FileControl().findFile(diretoria, "adm", "txt");
 	}
 }

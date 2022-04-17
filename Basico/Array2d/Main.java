@@ -1,8 +1,6 @@
-package Array2d;
+package Basico.Array2d;
 public class Main {
-
 	public static void main(String[] args) {
-
 		String dale[][] = {
 				
 				{"Carro", "Fiat", "Idea", "Idea"},
@@ -19,6 +17,5 @@ public class Main {
 				System.out.print(dale[row][column]+" ");
 			}
 		}
-		
 	}
 }

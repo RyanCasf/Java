@@ -1,8 +1,8 @@
 package Loiane.enumeradores;
 
-public enum Enum 
-{
-	MASCULINO('M'), FEMININO('F);
+public enum Enum {
+	MASCULINO('M'),
+	FEMININO('F');
 	
 	private char sexo;
 	

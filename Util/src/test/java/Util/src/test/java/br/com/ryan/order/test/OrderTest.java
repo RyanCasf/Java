@@ -1,4 +1,4 @@
-package br.com.ryan.order.test;
+package Util.src.test.java.br.com.ryan.order.test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +38,7 @@ public class OrderTest
 			{
 				if (temp.get(posicoesTemp[i]) > temp.get(posicoesTemp[j]) && i > j)
 				{
-					throw new Exception("A ordenção decrescente feri sua ordenação de grandeza!");
+					throw new Exception("A ordenï¿½ï¿½o decrescente feri sua ordenaï¿½ï¿½o de grandeza!");
 				}
 			}
 		}

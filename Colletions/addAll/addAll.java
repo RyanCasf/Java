@@ -1,12 +1,12 @@
+package Colletions.addAll;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class addAll
-{
+public class addAll {
     private static List<Long> chaves;
 
-    public static void main(String a[])
-    {
+    public static void main(String a[]) {
         System.out.println("Demonstrando Chaves!");
         chaves = new ArrayList<>();
         chaves.add(1L);
@@ -18,8 +18,7 @@ public class addAll
 
         chaves.addAll(chavesAdd);
 
-        for (Long chave : chaves)
-        {
+        for (Long chave : chaves) {
             System.out.println("Chave: "+chave);
         }
     }

@@ -1,4 +1,4 @@
-package Constructor;
+package Basico.Constructor;
 
 public class Main {
 	
@@ -18,8 +18,16 @@ public class Main {
 		// BigDecimal a = 458.5;
 		
 		// Recebem a Sí msm e a String, exceto "Char" q só para sí (mas é um Int)
-		Boolean b4 = new Boolean("qualquer coisa");
+		Boolean b4 = true;
 		System.out.println(b4);
+	}
+
+	static class Help {
+		public String valor;
+
+		Help(String... value) {
+			this.valor = value[0];
+		}
 	}
 }
 
