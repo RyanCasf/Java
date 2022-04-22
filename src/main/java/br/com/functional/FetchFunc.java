@@ -1,11 +1,11 @@
 package br.com.functional;
 
-import javax.swing.*;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Funcional {
+import javax.swing.JOptionPane;
+
+public class FetchFunc {
     public static void main(String[] args) {
         List<Aluno> alunos = fetchAlunos();
 
@@ -21,7 +21,7 @@ public class Funcional {
                 new Aluno("Ryan", "Catro", 6),
                 new Aluno("Felipe", "Catro", 10),
                 new Aluno("Rildo", "Ferreira", 8),
-                new Aluno("João", "Silva", 4)
+                new Aluno("Jan", "Silva", 4)
         );
     }
 
