@@ -18,22 +18,20 @@ public class TestArray {
 	@Test(expected = AssertionError.class)
 	public void testInicializacaoNegativo() {
 		Array a = new Array(-1);
-		Array A = null;
-
-		Assert.assertEquals(A, a);
+		Assert.assertNull(a);
 	}
 
 	@Test(expected = Exception.class)
 	public void testAdicionar() throws Exception {
 		Array a = new Array(10);
 
-		List<String> listaV = new ArrayList<String>();
-		Integer value;
+		List<String> listaV = new ArrayList<>();
+		int value;
 
 		for (int i = 0; i < 12; i++) {
 			value = random.nextInt(10);
-			listaV.add(value.toString());
-			a.adicionar(value.toString());
+			listaV.add(Integer.toString(value));
+			a.adicionar(Integer.toString(value));
 		}
 
 		boolean iguais = true;
@@ -53,7 +51,7 @@ public class TestArray {
 		a.adicionar("B");
 		a.adicionar("E");
 
-		Assert.assertTrue(a.obter(1).equals("B"));
+		Assert.assertEquals(a.obter(1), "B");
 	}
 
 	@Test
@@ -74,13 +72,13 @@ public class TestArray {
 	public void testAdicionarIndex() throws Exception {
 		Array a = new Array(10);
 
-		List<String> listaV = new ArrayList<String>();
-		Integer value;
+		List<String> listaV = new ArrayList<>();
+		int value;
 
 		for (int i = 0; i < 10; i++) {
 			value = random.nextInt(10);
-			listaV.add(value.toString());
-			a.adicionar(i, value.toString());
+			listaV.add(Integer.toString(value));
+			a.adicionar(i, Integer.toString(value));
 		}
 
 		boolean iguais = true;

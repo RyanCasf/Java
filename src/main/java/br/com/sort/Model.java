@@ -8,12 +8,22 @@ public class Model {
 	private String header;
 	private String body;
 
-	private List<Model> modelsFilhos = new ArrayList<>();
+	private List<Model> modelsFilhos = new ArrayList<Model>();
 
 	public Model(Long chave, String header, String body) {
 		this.chave = chave;
 		this.header = header;
 		this.body = body;
+	}
+
+	public Model(int chave, String header, String body) {
+		this.chave = (long) chave;
+		this.header = header;
+		this.body = body;
+	}
+
+	public Model() throws IllegalCallerException {
+		throw new IllegalCallerException("Construtor ilegal!");
 	}
 
 	public Long getChave() {
