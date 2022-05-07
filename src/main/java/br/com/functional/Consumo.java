@@ -5,7 +5,7 @@ public class Consumo {
 		Cliente cliente = new Cliente(1l, "Ryan");
 		Consumidor.msgValido.accept(cliente);
 	}
-	
+
 	static class Cliente {
 		private Long chave;
 		private String nome;

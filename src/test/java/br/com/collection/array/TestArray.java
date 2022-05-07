@@ -8,93 +8,90 @@ import org.junit.Test;
 
 public class TestArray {
 	private final static Random random = new Random();
-	
+
 	@Test(expected = OutOfMemoryError.class)
 	public void testInicializacaoEstouroMemoria() {
 		Array a = new Array(Integer.MAX_VALUE);
 		Assert.assertEquals(a, a);
 	}
-	
+
 	@Test(expected = AssertionError.class)
 	public void testInicializacaoNegativo() {
 		Array a = new Array(-1);
 		Array A = null;
-		
+
 		Assert.assertEquals(A, a);
 	}
-	
+
 	@Test(expected = Exception.class)
 	public void testAdicionar() throws Exception {
 		Array a = new Array(10);
-	
+
 		List<String> listaV = new ArrayList<String>();
 		Integer value;
-		
-		for (int i=0; i<12; i++) 
-		{
+
+		for (int i = 0; i < 12; i++) {
 			value = random.nextInt(10);
 			listaV.add(value.toString());
 			a.adicionar(value.toString());
 		}
-		
+
 		boolean iguais = true;
-		for (int i=0; i<a.tamanho(); i++)
-		{
+		for (int i = 0; i < a.tamanho(); i++) {
 			if (!a.obter(i).equals(listaV.get(i))) {
 				iguais = false;
 			}
 		}
-		
+
 		Assert.assertTrue(iguais);
 	}
-	
+
 	@Test
 	public void testObter() throws Exception {
 		Array a = new Array(5);
 		a.adicionar("A");
 		a.adicionar("B");
 		a.adicionar("E");
-		
+
 		Assert.assertTrue(a.obter(1).equals("B"));
 	}
-	
+
 	@Test
 	public void testObterInexistenteUP() {
 		Array a = new Array(0);
 		String value = a.obter(1);
 		Assert.assertNull(value);
 	}
-	
+
 	@Test
 	public void testObterInexistenteDOWN() {
 		Array a = new Array(0);
 		String value = a.obter(-1);
 		Assert.assertNull(value);
 	}
-	
+
 	@Test
 	public void testAdicionarIndex() throws Exception {
 		Array a = new Array(10);
-		
+
 		List<String> listaV = new ArrayList<String>();
 		Integer value;
-		
-		for (int i=0; i<10; i++) 
-		{
+
+		for (int i = 0; i < 10; i++) {
 			value = random.nextInt(10);
 			listaV.add(value.toString());
 			a.adicionar(i, value.toString());
 		}
-		
+
 		boolean iguais = true;
-		for (int i=0; i<listaV.size() ;i++) {
+		for (int i = 0; i < listaV.size(); i++) {
 			if (!a.obter(i).equals(listaV.get(i))) {
 				iguais = false;
 			}
 		}
 		Assert.assertTrue(iguais);
 	}
-	
+
 	@Test(expected = Exception.class)
 	public void testAdicionarIndexInexistente() throws Exception {
 		Array a = new Array(10);

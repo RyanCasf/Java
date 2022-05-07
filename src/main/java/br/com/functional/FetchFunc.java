@@ -6,71 +6,62 @@ import java.util.stream.Collectors;
 import javax.swing.JOptionPane;
 
 public class FetchFunc {
-    public static void main(String[] args) {
-        List<Aluno> alunos = fetchAlunos();
+	public static void main(String[] args) {
+		List<Aluno> alunos = fetchAlunos();
+		List<Aluno> aprovados = alunos.stream().filter(aluno -> aluno.getPontos() >= 6).collect(Collectors.toList());
+		aprovados.forEach(System.out::println);
+	}
 
-        List<Aluno> aprovados = alunos.stream()
-                .filter(aluno -> aluno.getPontos() >= 6)
-                .collect(Collectors.toList());
+	public static List<Aluno> fetchAlunos() {
+		return List.of(new Aluno("Ryan", "Catro", 6), new Aluno("Felipe", "Catro", 10),
+				new Aluno("Rildo", "Ferreira", 8), new Aluno("Jan", "Silva", 4));
+	}
 
-        aprovados.forEach(System.out::println);
-    }
+	static class Pessoa {
+		private String nome;
+		private String sobrenome;
 
-    public static List<Aluno> fetchAlunos() {
-        return List.of(
-                new Aluno("Ryan", "Catro", 6),
-                new Aluno("Felipe", "Catro", 10),
-                new Aluno("Rildo", "Ferreira", 8),
-                new Aluno("Jan", "Silva", 4)
-        );
-    }
+		public void setNome(String nome) {
+			this.nome = (nome != null ? nome : "");
+		}
 
-    static class Pessoa {
-        private String nome;
-        private String sobrenome;
+		public void setSobrenome(String sobrenome) {
+			this.sobrenome = (sobrenome != null ? sobrenome : "");
+		}
 
-        public void setNome(String nome) {
-            this.nome = (nome != null ? nome : "");
-        }
+		public String getSobrenome() {
+			return sobrenome;
+		}
 
-        public void setSobrenome(String sobrenome) {
-            this.sobrenome = (sobrenome != null ? sobrenome : "");
-        }
+		public String getNome() {
+			return nome;
+		}
+	}
 
-        public String getSobrenome() {
-            return sobrenome;
-        }
+	static class Aluno extends Pessoa {
+		private int pontos;
 
-        public String getNome() {
-            return nome;
-        }
-    }
+		Aluno(String nome, String sobrenome, int pontos) {
+			this.setNome(nome);
+			this.setSobrenome(sobrenome);
+			this.setPontos(pontos);
+		}
 
-    static class Aluno extends Pessoa {
-        private int pontos;
+		public int getPontos() {
+			return pontos;
+		}
 
-        Aluno(String nome, String sobrenome, int pontos) {
-            this.setNome(nome);
-            this.setSobrenome(sobrenome);
-            this.setPontos(pontos);
-        }
+		public void setPontos(int pontos) {
+			while (pontos < 0 || pontos > 10) {
+				pontos = Integer.parseInt(JOptionPane.showInputDialog("Dígite o nome do Aluno: "));
+			}
 
-        public int getPontos() {
-            return pontos;
-        }
+			this.pontos = pontos;
+		}
 
-        public void setPontos(int pontos) {
-            while (pontos < 0 || pontos > 10) {
-                pontos = Integer.parseInt(JOptionPane.showInputDialog("Dígite o nome do Aluno: "));
-            }
-
-            this.pontos = pontos;
-        }
-
-        @Override
-        public String toString() {
-            return this.getNome().concat(" ").concat(this.getSobrenome())
-                    .concat(", pontos.: ")+this.getPontos();
-        }
-    }
+		@Override
+		public String toString() {
+			return this.getNome().concat(" ").concat(this.getSobrenome()).concat(", pontos.: ") + this.getPontos();
+		}
+	}
 }
