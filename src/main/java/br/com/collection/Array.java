@@ -1,4 +1,4 @@
-package br.com.collection.array;
+package br.com.collection;
 
 /**
  * interface para methods
