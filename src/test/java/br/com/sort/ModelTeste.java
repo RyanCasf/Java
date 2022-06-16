@@ -15,4 +15,18 @@ public class ModelTeste {
     public void confirmandoErroConstrutorModel() {
         new Model();
     }
+
+    @Test
+    public void refenciandoObjetos() {
+        Model model1 = new Model(1, "A", "A");
+        Model model2 = new Model(2, "B", "B");
+
+        model2 = model1;
+        model2.setChave(2);
+
+        System.out.println(model1.toString());
+        System.out.println(model1.toString());
+
+        Assert.assertEquals(model1, model2);
+    }
 }

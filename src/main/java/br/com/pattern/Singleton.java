@@ -1,4 +1,4 @@
-package br.com.estatico;
+package br.com.pattern;
 
 public class Singleton {
 	private static Singleton singleton;
