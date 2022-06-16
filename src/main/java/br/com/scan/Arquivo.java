@@ -5,21 +5,24 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Arquivo {
-	private static final String URI = "C:\\Users\\ryanc\\filename.txt";
 
-	public static void main(String[] args) {
+	public static void lendoArquivo(String caminho) {
+		Scanner sc = null;
 		try {
-			Scanner sc;
-			File file = new File(URI);
+			File file = new File(caminho);
 
 			sc = new Scanner(file);
 			while (sc.hasNextLong()) {
 				long aLong = sc.nextLong();
-				System.out.println(aLong);
 			}
-			sc.close();
-		} catch (IOException e) {
-			System.out.println(e.getMessage());
+		} 
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+		finally {
+			if (sc != null) {
+				sc.close();
+			}
 		}
 	}
 }

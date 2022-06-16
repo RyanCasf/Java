@@ -1,4 +1,4 @@
-package br.com.regex;
+package content.br.com.regex;
 
 import java.util.Random;
 

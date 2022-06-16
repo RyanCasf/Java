@@ -19,12 +19,4 @@ public class Singleton {
 		}
 		return singleton;
 	}
-
-	public static void main(String[] args) {
-		Singleton singleton = Singleton.getInstance("1");
-		Singleton anotherSingleton = Singleton.getInstance("2");
-
-		System.out.println(singleton.value);
-		System.out.println(anotherSingleton.value);
-	}
 }
