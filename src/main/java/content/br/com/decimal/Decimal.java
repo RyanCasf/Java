@@ -1,4 +1,4 @@
-package br.com.decimal;
+package content.br.com.decimal;
 
 import java.math.BigDecimal;
 
