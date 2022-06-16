@@ -24,9 +24,6 @@ public class ModelTeste {
         model2 = model1;
         model2.setChave(2);
 
-        System.out.println(model1.toString());
-        System.out.println(model1.toString());
-
         Assert.assertEquals(model1, model2);
     }
 }

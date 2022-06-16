@@ -6,7 +6,7 @@ import java.util.Random;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TestArray {
+public class ArrayTeste {
 	private final static Random random = new Random();
 
 	@Test(expected = OutOfMemoryError.class)
@@ -51,7 +51,7 @@ public class TestArray {
 		a.adicionar("B");
 		a.adicionar("E");
 
-		Assert.assertEquals(a.obter(1), "B");
+		Assert.assertEquals("B", a.obter(1));
 	}
 
 	@Test

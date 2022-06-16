@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.time.LocalDate;
 
 public class LocalTeste {
+	
     @Test
     public void dataAmanha() {
         LocalDate amanha = LocalDate.now().plusDays(1l);
@@ -13,5 +14,4 @@ public class LocalTeste {
 
         Assert.assertEquals(amanha, amanhaTeste);
     }
-
 }

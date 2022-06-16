@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class EntradasGraficos {
 	
-	public static void main(String[] args) {
+	public void gerandoJO() {
 		JOptionPane.showMessageDialog(null, "Apresentação do SWING", "java.swing", SwingModel.ALERT_ERROR, null);
 		
 		int resultConfirm = JOptionPane.showConfirmDialog(null, "Você confirma isso: ", "Selecione a opção desejada", 1);
