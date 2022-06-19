@@ -10,6 +10,6 @@ public class CalendarioTeste {
 	
 	@Test
 	public void horarioAtual() {
-		Assert.assertNotEquals(Calendar.getInstance(), calendario.horarioAtual());
+		Assert.assertEquals(Calendar.getInstance().get(Calendar.DATE), calendario.horarioAtual().get(Calendar.DATE));
 	}
 }
