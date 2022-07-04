@@ -3,7 +3,7 @@ package br.com.collection;
 /**
  * interface para methods
  * 
- * @author ryanc
+ * @author Ryan Castro Ferreira
  */
 public class Array implements ArrayInterface {
 	private String[] array;
@@ -66,17 +66,15 @@ public class Array implements ArrayInterface {
 	}
 
 	/**
-	 * rr para size ocupado
-	 * 
-	 * @author ryanc
+	 * Retorno para o tamanho ocupado
+	 * @author Ryan Castro Ferreira
 	 */
 	public int tamanho() {
 		return array.length;
 	}
 
 	/**
-	 * return is para Empty
-	 * 
+	 * Retorno para se for vazio
 	 * @param index posição para existência em escopo
 	 * @return boolean to is
 	 */

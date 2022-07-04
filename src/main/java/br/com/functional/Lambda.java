@@ -9,7 +9,7 @@ import br.com.functional.model.Funcionario;
 public class Lambda {
 	
 	public List<String> filter(List<String> lista) {
-		return lista.stream().filter(l -> l.equalsIgnoreCase("A")).toList();
+		return lista.stream().filter(l -> l.equalsIgnoreCase("A")).collect(Collectors.toList());
 	}
 	
 	public List<String> filterComp(List<Funcionario> funcionarios) {
