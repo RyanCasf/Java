@@ -11,7 +11,7 @@ import org.junit.jupiter.api.TestInstance.Lifecycle;
 import br.com.pattern.enumeradores.Enumerador;
 
 @TestInstance(Lifecycle.PER_CLASS)
-@DisplayName("Enumerador")
+@DisplayName("Pattern: Enumerador")
 class EnumeradorTeste {
 	
 	@Test

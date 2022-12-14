@@ -12,7 +12,7 @@ import org.junit.jupiter.api.TestInstance.Lifecycle;
 import br.com.first.inicial.Inicial;
 
 @TestInstance(Lifecycle.PER_CLASS)
-@DisplayName("Inicial")
+@DisplayName("First: Inicial")
 class InicialTeste {
 	
 	private Inicial inicial = new Inicial();
