@@ -9,6 +9,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
+import br.com.first.inicial.Inicial;
+
 @TestInstance(Lifecycle.PER_CLASS)
 @DisplayName("Inicial")
 class InicialTeste {

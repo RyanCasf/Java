@@ -8,6 +8,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
+import br.com.pattern.enumeradores.Enumerador;
+
 @TestInstance(Lifecycle.PER_CLASS)
 @DisplayName("Enumerador")
 class EnumeradorTeste {

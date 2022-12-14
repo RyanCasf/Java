@@ -1,4 +1,4 @@
-package br.com.inicial;
+package br.com.first.inicial;
 
 public class Inicial {
 	

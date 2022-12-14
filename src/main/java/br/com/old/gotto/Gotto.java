@@ -1,4 +1,4 @@
-package br.com.gotto;
+package br.com.old.gotto;
 
 public class Gotto {
 	

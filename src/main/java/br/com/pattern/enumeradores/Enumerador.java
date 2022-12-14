@@ -1,4 +1,4 @@
-package br.com.enumeradores;
+package br.com.pattern.enumeradores;
 
 public enum Enumerador {
 	
