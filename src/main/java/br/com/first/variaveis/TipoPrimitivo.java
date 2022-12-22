@@ -1,6 +1,6 @@
-package br.com.first.inicial;
+package br.com.first.variaveis;
 
-public class Inicial {
+public class TipoPrimitivo {
 	
 	private String string;
 	private char caracter;

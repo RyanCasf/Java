@@ -1,4 +1,4 @@
-package br.com.inicial;
+package br.com.variaveis;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -9,13 +9,13 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
-import br.com.first.inicial.Inicial;
+import br.com.first.variaveis.TipoPrimitivo;
 
 @TestInstance(Lifecycle.PER_CLASS)
-@DisplayName("First: Inicial")
-class InicialTeste {
+@DisplayName("First: Tipo Primitivo")
+class TipoPrimitivoTeste {
 	
-	private Inicial inicial = new Inicial();
+	private TipoPrimitivo inicial = new TipoPrimitivo();
 	
 	@Test
 	@DisplayName("Valor padrão da String.")
