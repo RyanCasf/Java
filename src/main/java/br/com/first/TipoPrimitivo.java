@@ -1,10 +1,10 @@
-package br.com.first.variaveis;
+package br.com.first;
 
 public class TipoPrimitivo {
-	
+
 	private String string;
 	private char caracter;
-	
+
 	private byte bits;
 	private short shor;
 	private int inteiro;
@@ -49,5 +49,13 @@ public class TipoPrimitivo {
 	
 	public double getDoubler() {
 		return doubler;
+	}
+
+	public void setString(String string) {
+		this.string = string;
+	}
+
+	public void setCaracter(char caracter) {
+		this.caracter = caracter;
 	}
 }

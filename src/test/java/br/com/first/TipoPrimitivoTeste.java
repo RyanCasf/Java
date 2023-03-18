@@ -1,4 +1,4 @@
-package br.com.variaveis;
+package br.com.first;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
-import br.com.first.variaveis.TipoPrimitivo;
+import br.com.first.TipoPrimitivo;
 
 @TestInstance(Lifecycle.PER_CLASS)
 @DisplayName("First: Tipo Primitivo")
@@ -57,7 +57,7 @@ class TipoPrimitivoTeste {
 	void padraoBoolean() {
 		assertFalse(inicial.isBoleano());
 	}
-	
+
 	@Test @DisplayName("Valor padrão do float.")
 	void padraoFloat() {
 		assertEquals(0.0, inicial.getFlutuante());
@@ -66,5 +66,17 @@ class TipoPrimitivoTeste {
 	@Test @DisplayName("Valor padrão do double.")
 	void padraoDouble() {
 		assertEquals(0.0, inicial.getDoubler());
+	}
+
+	@Test @DisplayName("Exercício 1: Impressão de String com get/set.")
+	void stringImpressao() {
+		inicial.setString("Teste");
+		assertEquals("Teste", inicial.getString());
+	}
+
+	@Test @DisplayName("Exercício 2: Impressão de char com get/set.")
+	void charImpressao() {
+		inicial.setCaracter('a');
+		assertEquals(Character.valueOf('a'), Character.valueOf(inicial.getCaracter()));
 	}
 }

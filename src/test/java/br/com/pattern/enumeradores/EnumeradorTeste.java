@@ -1,4 +1,4 @@
-package br.com.enumeradores;
+package br.com.pattern.enumeradores;
 
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
