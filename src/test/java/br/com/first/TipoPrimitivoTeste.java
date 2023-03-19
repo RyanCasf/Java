@@ -10,8 +10,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
-import br.com.first.TipoPrimitivo;
-
 @TestInstance(Lifecycle.PER_CLASS)
 @DisplayName("First: Tipo Primitivo")
 class TipoPrimitivoTeste {

@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3847713b-8441-4f89-a691-0c363ab846a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/first/Operador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/first/variaveis/TipoPrimitivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/first/TipoPrimitivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/enumeradores/EnumeradorTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/pattern/enumeradores/EnumeradorTeste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/variaveis/TipoPrimitivoTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/first/TipoPrimitivoTeste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/variaveis/TipoPrimitivo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/variaveis/TipoPrimitivoTeste.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/variaveis/TipoPrimitivoTeste.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/Operador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/Operador.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +50,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -62,7 +58,7 @@
       <recent name="br.com.first" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Java">
+  <component name="RunManager" selected="JUnit.OperadorTeste">
     <configuration name="All in Java (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java" />
       <option name="PACKAGE_NAME" value="" />
@@ -87,16 +83,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EnumeradorTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OperadorTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.enumeradores.*" />
+          <option name="PATTERN" value="br.com.first.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.enumeradores" />
-      <option name="MAIN_CLASS_NAME" value="br.com.enumeradores.EnumeradorTeste" />
+      <option name="PACKAGE_NAME" value="br.com.first" />
+      <option name="MAIN_CLASS_NAME" value="br.com.first.OperadorTeste" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OperadorTeste" />
         <item itemvalue="JUnit.All in Java" />
         <item itemvalue="JUnit.All in Java (2)" />
         <item itemvalue="JUnit.TipoPrimitivoTeste.charImpressao" />
         <item itemvalue="JUnit.All in Java (1)" />
-        <item itemvalue="JUnit.EnumeradorTeste" />
       </list>
     </recent_temporary>
   </component>
