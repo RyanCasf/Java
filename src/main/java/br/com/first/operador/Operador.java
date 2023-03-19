@@ -29,6 +29,8 @@ public class Operador implements OperadorInterface {
 		
 		double total = 1.0d;
 		for (double n : numeros) {
+			if (n == 0) return 0.0d;
+
 			total *= n;
 		}
 		
