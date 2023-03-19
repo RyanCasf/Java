@@ -1,4 +1,4 @@
-package br.com.first;
+package br.com.first.variavel;
 
 public class TipoPrimitivo {
 
