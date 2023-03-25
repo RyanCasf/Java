@@ -8,24 +8,48 @@ import br.com.stream.Pessoa;
 
 public class Logica {
 	
-	public boolean isTodasPessoaIdMaior10(List<Pessoa> pessoas) {
+	private Logica() {
+		throw new IllegalStateException("Classe utilitária!");
+	}
+	
+	public static boolean isTodasPessoaIdMaior10(List<Pessoa> pessoas) {
+		if (pessoas == null) {
+			throw new NullPointerException("list null");
+		}
+		
 		return pessoas.stream().allMatch(p -> p.getId() > 10);
 	}
 	
-	public boolean isAlgumaPessoaIdMaior10(List<Pessoa> pessoas) {
+	public static boolean isAlgumaPessoaIdMaior10(List<Pessoa> pessoas) {
+		if (pessoas == null) {
+			throw new NullPointerException("list null");
+		}
+		
 		return pessoas.stream().anyMatch(p -> p.getId() > 10);
 	}
 	
-	public boolean isNinguemPessoaIdMaior10(List<Pessoa> pessoas) {
+	public static boolean isNinguemPessoaIdMaior10(List<Pessoa> pessoas) {
+		if (pessoas == null) {
+			throw new NullPointerException("list null");
+		}
+		
 		return pessoas.stream().noneMatch(p -> p.getId() > 10);
 	}
 	
-	public Optional<Pessoa> getPrimeira(List<Pessoa> pessoas) {
+	public static Optional<Pessoa> pegarMenorId(List<Pessoa> pessoas) {
+		if (pessoas == null) {
+			throw new NullPointerException("list null");
+		}
+		
 		return pessoas.stream()
 				.min(Comparator.comparing(Pessoa::getId));
 	}
 	
-	public Optional<Pessoa> getUltimo(List<Pessoa> pessoas) {
+	public static Optional<Pessoa> pegarMaiorId(List<Pessoa> pessoas) {
+		if (pessoas == null) {
+			throw new NullPointerException("list null");
+		}
+		
 		return pessoas.stream()
 				.max(Comparator.comparing(Pessoa::getId));
 	}

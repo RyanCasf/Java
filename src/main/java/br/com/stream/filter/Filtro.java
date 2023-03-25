@@ -7,7 +7,19 @@ import br.com.stream.Pessoa;
 
 public class Filtro {
 	
-	public List<Pessoa> pesquisar(List<Pessoa> pessoas, long param) {
+	private Filtro() {
+		throw new IllegalStateException("Classe utilitária!");
+	}
+	
+	public static List<Pessoa> pesquisar(List<Pessoa> pessoas, long param) {
+		if (pessoas == null) {
+			throw new NullPointerException("list null");
+		}
+		
+		if (pessoas.isEmpty()) {
+			return pessoas;
+		}
+		
 		return pessoas.stream().filter(p -> p.getId() == param).collect(Collectors.toList());
 	}
 }
