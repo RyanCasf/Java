@@ -21,8 +21,8 @@ class ArquivoTeste {
 		assertThrows(IllegalArgumentException.class, () -> Arquivo.criar("    "));
 	}
 	
-	@Test @DisplayName("Criar.")
-	void criar() {
+	@Test @DisplayName("Criar arquivo.")
+	void criarArquivo() {
 		assertDoesNotThrow(() -> Arquivo.criar("teste2.txt")	);
 	}
 }

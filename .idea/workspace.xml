@@ -5,7 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3847713b-8441-4f89-a691-0c363ab846a7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/entradasaida/arquivo/Arquivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/entradasaida/arquivo/Arquivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/conf/Configuracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/conf/Configuracao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/entradasaida/arquivo/ArquivoTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/entradasaida/arquivo/ArquivoTeste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/entradasaida/arquivo/Arquivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/entradasaida/arquivo/Arquivo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/contrato/Contratado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/contrato/Contratado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/contrato/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/contrato/Interface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/enumeration/Enumeration$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/enumeration/Enumeration$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/enumeration/Enumeration$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/enumeration/Enumeration$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/enumeration/Enumeration$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/enumeration/Enumeration$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/enumeration/Enumeration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/enumeration/Enumeration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/erro/CheckedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/erro/CheckedException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/erro/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/erro/Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/erro/UncheckedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/erro/UncheckedException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/heranca/Endereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/heranca/Endereco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/heranca/Funcionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/heranca/Funcionario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/heranca/Pessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/heranca/Pessoa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/message/PatternMatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/message/PatternMatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/message/ResourceBundle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/message/ResourceBundle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/operador/Operador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/operador/Operador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/operador/OperadorInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/operador/OperadorInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/scan/KeyScan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/scan/KeyScan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/first/variavel/TipoPrimitivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/first/variavel/TipoPrimitivo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/old/gotto/Gotto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/old/gotto/Gotto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/otimization/loop/Loop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/otimization/loop/Loop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/otimization/texto/ConcatCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/otimization/texto/ConcatCount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/stream/Pessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/stream/Pessoa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/stream/filter/Filtro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/stream/filter/Filtro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/stream/group/Grupo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/stream/group/Grupo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/stream/match/Logica.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/stream/match/Logica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/stream/sort/Ordenacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/stream/sort/Ordenacao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/conf/Configuracao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/conf/Configuracao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/entradasaida/arquivo/ArquivoTeste.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/entradasaida/arquivo/ArquivoTeste.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/first/contrato/ContratadoTeste.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/first/contrato/ContratadoTeste.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/first/enumeration/EnumerationTeste.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/first/enumeration/EnumerationTeste.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/first/erro/ModelTeste.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/first/erro/ModelTeste.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/first/operador/OperadorTeste.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/first/operador/OperadorTeste.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/first/variavel/TipoPrimitivoTeste.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/first/variavel/TipoPrimitivoTeste.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/otimization/loop/LoopTeste.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/otimization/loop/LoopTeste.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/otimization/texto/ConcatCountTeste.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/otimization/texto/ConcatCountTeste.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +92,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="br.com.first" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Java (3)">
+  <component name="RunManager" selected="JUnit.ArquivoTeste">
+    <configuration name="All in Java (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in Java (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java" />
       <option name="PACKAGE_NAME" value="" />
@@ -74,7 +124,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in Java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in Java (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -82,44 +132,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OperadorTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArquivoTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.first.*" />
+          <option name="PATTERN" value="br.com.entradasaida.arquivo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.first" />
-      <option name="MAIN_CLASS_NAME" value="br.com.first.OperadorTeste" />
+      <option name="PACKAGE_NAME" value="br.com.entradasaida.arquivo" />
+      <option name="MAIN_CLASS_NAME" value="br.com.entradasaida.arquivo.ArquivoTeste" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TipoPrimitivoTeste.charImpressao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.first.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.first" />
-      <option name="MAIN_CLASS_NAME" value="br.com.first.TipoPrimitivoTeste" />
-      <option name="METHOD_NAME" value="charImpressao" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in Java (3)" />
-        <item itemvalue="JUnit.OperadorTeste" />
-        <item itemvalue="JUnit.All in Java" />
+        <item itemvalue="JUnit.ArquivoTeste" />
         <item itemvalue="JUnit.All in Java (2)" />
-        <item itemvalue="JUnit.TipoPrimitivoTeste.charImpressao" />
+        <item itemvalue="JUnit.All in Java (4)" />
+        <item itemvalue="JUnit.All in Java (1)" />
+        <item itemvalue="JUnit.All in Java (3)" />
       </list>
     </recent_temporary>
   </component>
