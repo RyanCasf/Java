@@ -1,7 +1,11 @@
 package br.com.entradasaida.arquivo;
 
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+
+import util.conf.Configuracao;
 
 public class Arquivo {
 	
@@ -22,6 +26,23 @@ public class Arquivo {
 		boolean isCriado = file.createNewFile();
 		
 		if (isCriado) {
+			try (FileWriter fileWriter = new FileWriter(file)) {
+				fileWriter.write("Teste de escrita...");
+			}
+			catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+			try (FileReader fileReader = new FileReader(file)) {
+				int i;
+				while ((i=fileReader.read()) != -1) {
+					Configuracao.imprimir((char) i);
+				}
+			}
+			catch (IOException e) {
+				e.printStackTrace();
+			}
+			
 			limparArquivo(CAMINHO);
 		}
 	}

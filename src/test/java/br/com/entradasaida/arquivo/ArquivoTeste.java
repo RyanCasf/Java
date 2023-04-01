@@ -23,6 +23,6 @@ class ArquivoTeste {
 	
 	@Test @DisplayName("Criar.")
 	void criar() {
-		assertDoesNotThrow(() -> Arquivo.criar("teste.txt")	);
+		assertDoesNotThrow(() -> Arquivo.criar("teste2.txt")	);
 	}
 }
