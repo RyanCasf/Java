@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-@DisplayName("CaminhoTeste")
+@DisplayName("Entrada e Saída: Caminho")
 class CaminhoTeste {
 
     @Test @DisplayName("Criar passando caminho nulo.")
