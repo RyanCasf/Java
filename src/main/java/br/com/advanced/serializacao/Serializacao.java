@@ -1,4 +1,4 @@
-package br.com.advanced;
+package br.com.advanced.serializacao;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -9,13 +9,10 @@ import java.nio.file.Paths;
 
 public class Serializacao {
 
-    public Serializacao() {
+    private Serializacao() {
         throw new IllegalStateException("Classe utilitária!");
     }
 
-    /*
-     * Transformar o objeto num array de bytes
-     */
     public static void serializar(Aluno aluno) {
         Path path = Paths.get("teste.ser");
 

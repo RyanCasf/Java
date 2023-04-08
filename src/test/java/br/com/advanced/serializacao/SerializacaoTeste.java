@@ -1,20 +1,30 @@
-package br.com.advanced;
+package br.com.advanced.serializacao;
 
+import java.io.IOException;
+
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
-
-import java.io.IOException;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @DisplayName("Advanced: Serializable")
 class SerializacaoTeste {
 
-    private final Aluno ALUNO = new Aluno(1l, "teste", "12345");
-
+    private Aluno aluno;
+    
+    @BeforeAll
+    void novo() {
+    	aluno  = new Aluno(1l, "teste", "12345");
+    	
+    	Turma turma = new Turma();
+    	turma.setNome("Turma");
+    	aluno.setTurma(turma);
+    }
+    
     @Test @DisplayName("Serializar.")
     void serializar() throws IOException {
-        Serializacao.serializar(ALUNO);
+        Serializacao.serializar(aluno);
     }
 
     @Test @DisplayName("Deserializar.")
