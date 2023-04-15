@@ -6,6 +6,9 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import util.conf.Configuracao;
 
@@ -55,11 +58,8 @@ public class Arquivo {
 
 	private static void limparArquivo(final String CAMINHO) {
 		try {
-			File temp = new File(CAMINHO);
-			if (temp.exists()) {
-				final boolean isDeletado = temp.delete();
-				Configuracao.imprimir("Arquivo de entrada e saída excluído: " + isDeletado);
-			}
+			Path path = Paths.get(CAMINHO);
+			Files.deleteIfExists(path);
 		}
 		catch (Exception e) {
 			e.printStackTrace();

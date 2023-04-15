@@ -22,6 +22,11 @@ class SerializacaoTeste {
     	aluno.setTurma(turma);
     }
     
+    @Test @DisplayName("Serializar nula.")
+    void serializarNula() throws IOException {
+        Serializacao.serializar(null);
+    }
+    
     @Test @DisplayName("Serializar.")
     void serializar() throws IOException {
         Serializacao.serializar(aluno);
