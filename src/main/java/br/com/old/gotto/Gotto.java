@@ -2,7 +2,7 @@ package br.com.old.gotto;
 
 public class Gotto {
 	
-	public static void main(String[] args) {
+	public void make() {
         for(int i=0; i<3; i++) {
 
             rotulo1: {

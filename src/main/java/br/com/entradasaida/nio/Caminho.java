@@ -1,13 +1,17 @@
 package br.com.entradasaida.nio;
 
-import util.conf.Configuracao;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import util.conf.Configuracao;
+
 public class Caminho {
+	
+	private Caminho() {
+		throw new IllegalStateException("Utility class");
+	}
 
     public static void criar(final String CAMINHO) throws IOException {
         if (CAMINHO == null) {
@@ -35,13 +39,5 @@ public class Caminho {
         Configuracao.imprimir("2. Absoluto + File: " + absoluto.resolve(file));
         Configuracao.imprimir("3. Relativo + Absoluto: " + relative.resolve(absoluto));
         Configuracao.imprimir("4. Relativo + File: " + relative.resolve(file));
-    }
-
-    public static void relatizeCasoProble() {
-        Path start = Paths.get("C:\\Users\\ryanc");
-        Path end = Paths.get("dev2");
-        Path pathToEnd = start.relativize(end);
-
-        Configuracao.imprimir(pathToEnd.toString());
     }
 }

@@ -109,8 +109,28 @@ class LogicaTeste {
 		assertDoesNotThrow(() -> Logica.isNinguemPessoaIdMaior10(new ArrayList<Pessoa>()));
 	}
 	
+	@Test @DisplayName("Ninguém com id maior do que 10 verdadeiro.")
+	void ninguemComIDMaiorQue10Verdadeiro() {
+		List<Pessoa> pessoas = new ArrayList<Pessoa>();
+		pessoas.add(new Pessoa(1, "Nome A", "nomeA", false));
+		pessoas.add(new Pessoa(2, "Nome B", "nomeB", false));
+		pessoas.add(new Pessoa(3, "Nome C", "nomeC", false));
+		
+		assertTrue(Logica.isNinguemPessoaIdMaior10(pessoas));
+	}
+	
 	@Test @DisplayName("Ninguém com id maior do que 10 falso.")
 	void ninguemComIDMaiorQue10Falso() {
+		List<Pessoa> pessoas = new ArrayList<Pessoa>();
+		pessoas.add(new Pessoa(9, "Nome A", "nomeA", false));
+		pessoas.add(new Pessoa(10, "Nome B", "nomeB", false));
+		pessoas.add(new Pessoa(11, "Nome C", "nomeC", false));
+		
+		assertFalse(Logica.isNinguemPessoaIdMaior10(pessoas));
+	}
+	
+	@Test @DisplayName("Alguém com id maior do que 10 falso.")
+	void alguemComIDMaiorQue10Falso() {
 		List<Pessoa> pessoas = List.of(
 				new Pessoa(10, "A", "a", false),
 				new Pessoa(2, "A", "a", false),
@@ -123,7 +143,7 @@ class LogicaTeste {
 	}
 	
 	@Test @DisplayName("Ninguém com id maior do que 10 verdadeiro.")
-	void ninguemComIDMaiorQue10Verdadeiro() {
+	void alguemComIDMaiorQue10Verdadeiro() {
 		List<Pessoa> pessoas = List.of(
 				new Pessoa(10, "A", "a", false),
 				new Pessoa(2, "A", "a", false),

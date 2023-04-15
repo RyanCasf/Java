@@ -2,7 +2,7 @@ package br.com.otimization.loop;
 
 public class Loop {
 	
-	public static void main(String[] args) {
+	public void make() {
 		Loop loop = new Loop();
 		String[] palavras = new String[3000];
 		

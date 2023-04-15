@@ -33,4 +33,9 @@ class ConcatCountTeste {
 	void percorrendoBuilder() {
 		assertDoesNotThrow(() -> concat.countBuilder(100));
 	}
+	
+	@Test @DisplayName("Fazer count.")
+	void make() {
+		concat.make();
+	}
 }

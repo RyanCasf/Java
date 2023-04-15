@@ -16,7 +16,7 @@ public class PatternMatch {
 			throw new IllegalArgumentException("pattern is null");
 		}
 		
-		if (pattern.isEmpty()) {
+		if (pattern.trim().isEmpty()) {
 			throw new IllegalArgumentException("pattern is empty");
 		}
 		
@@ -31,7 +31,7 @@ public class PatternMatch {
 			throw new IllegalArgumentException("param is null");
 		}
 		
-		if (param.isEmpty()) {
+		if (param.trim().isEmpty()) {
 			throw new IllegalArgumentException("param is empty");
 		}
 		

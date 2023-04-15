@@ -20,8 +20,7 @@ class PatternMatchTeste {
 	
 	@Test @DisplayName("Regex search param empty.")
 	void regexSearchEmpty() {
-		assertThrows(IllegalArgumentException.class, () -> PatternMatch.regexSearch(""));
-		assertFalse(PatternMatch.regexSearch("     "));
+		assertThrows(IllegalArgumentException.class, () -> PatternMatch.regexSearch("   "));
 	}
 	
 	@Test @DisplayName("Regex search param invalid.")
@@ -41,8 +40,7 @@ class PatternMatchTeste {
 	
 	@Test @DisplayName("Hexadecimal param empty.")
 	void isHexadecimalEmpty() {
-		assertThrows(IllegalArgumentException.class, () -> PatternMatch.regexSearch(""));
-		assertFalse(PatternMatch.isHexadecimal("     "));
+		assertThrows(IllegalArgumentException.class, () -> PatternMatch.isHexadecimal("   "));
 	}
 	
 	@Test @DisplayName("Hexadecimal param inválido.")

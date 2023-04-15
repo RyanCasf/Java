@@ -51,36 +51,8 @@ public class Aluno implements Serializable {
     public String toString() {
         return "Aluno: ID=" + id + ", Nome=" + nome + ", Senha=" + senha + ", Turma=" + (turma != null ? turma.getNome() : "null");
     }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
-	public Turma getTurma() {
-		return turma;
-	}
-
-	public void setTurma(Turma turma) {
+    
+    public void setTurma(Turma turma) {
 		this.turma = turma;
 	}
 }

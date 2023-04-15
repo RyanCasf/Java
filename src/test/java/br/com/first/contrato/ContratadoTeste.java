@@ -1,5 +1,6 @@
 package br.com.first.contrato;
 
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
@@ -28,5 +29,15 @@ class ContratadoTeste {
 	@Test @DisplayName("Existe o método default.")
 	void retornoDefaultFalso() {
 		assertFalse(contratado.isReturn());
+	}
+	
+	@Test @DisplayName("Executando salvar.")
+	void salvar() {
+		assertDoesNotThrow(() -> contratado.salvar(null));
+	}
+	
+	@Test @DisplayName("Executando deletar.")
+	void deletar() {
+		assertDoesNotThrow(() -> contratado.deletar(0));
 	}
 }

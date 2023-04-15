@@ -30,9 +30,4 @@ class CaminhoTeste {
     void resolve() {
         assertDoesNotThrow(Caminho::resolve);
     }
-
-    @Test @DisplayName("Problema de normalização de caminhos com relatize de absoluto x relativo.")
-    void relatizeCasoProble() {
-        assertThrows(IllegalArgumentException.class, Caminho::relatizeCasoProble);
-    }
 }

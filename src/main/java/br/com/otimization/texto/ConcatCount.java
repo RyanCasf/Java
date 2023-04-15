@@ -2,7 +2,7 @@ package br.com.otimization.texto;
 
 public class ConcatCount {
 	
-	public static void main(String[] args) {
+	public void make() {
 		ConcatCount count = new ConcatCount();
 		final int QUANTIDADE = 100;
 		
@@ -37,14 +37,8 @@ public class ConcatCount {
 		}
 	}
 	
-	private void exibirQuantidade(int quantidade, double inicio, String nome) {
-		if (quantidade < 1000) {
-			System.out.println(
-					"Criar " + quantidade + " " + nome + " levou " + (System.nanoTime() - inicio) + " nano segundos.");
-		} 
-		else {
-			System.out.println("Criar " + quantidade + " " + nome + " levou "
-					+ (System.nanoTime() - inicio) / 1000000000 + " segundos.");
-		}
+	private void exibirQuantidade(double quantidade, double inicio, String nome) {
+		System.out.println(
+				"Criar " + quantidade + " " + nome + " levou " + (System.nanoTime() - inicio) + " nano segundos.");
 	}
 }

@@ -1,6 +1,8 @@
 package br.com.collection.igual;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -60,5 +62,27 @@ class IgualTeste {
 		igual.setChave(CHAVE);
 		
 		assertTrue(igual.equals(igualTemp));
+	}
+	
+	@Test @DisplayName("Get para chave nula.")
+	void getChaveNula() {
+		assertNull(igual.getChave());
+	}
+	
+	@Test @DisplayName("Get para chave.")
+	void getChave() {
+		igual.setChave(10l);
+		assertEquals(10l, igual.getChave());
+	}
+	
+	@Test @DisplayName("toString com chave nula.")
+	void igualToStringNula() {
+		assertEquals("Chave=null", igual.toString());
+	}
+	
+	@Test @DisplayName("toString com chave.")
+	void igualToString() {
+		igual.setChave(1l);
+		assertEquals("Chave=1", igual.toString());
 	}
 }

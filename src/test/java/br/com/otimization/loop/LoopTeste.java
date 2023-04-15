@@ -20,6 +20,11 @@ class LoopTeste {
 		loop = new Loop();
 	}
 	
+	@Test @DisplayName("Make.")
+	void make() {
+		loop.make();
+	}
+	
 	@Test @DisplayName("Percorrendo loop em for.")
 	void percorrerLoopEmFor() {
 		assertDoesNotThrow(() -> loop.loopFor(PALAVRAS));

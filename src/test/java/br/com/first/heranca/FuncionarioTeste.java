@@ -15,6 +15,11 @@ import org.junit.jupiter.api.TestInstance.Lifecycle;
 @DisplayName("First: Funcionário")
 class FuncionarioTeste {
 	
+	@Test @DisplayName("É some.")
+	void isSome() {
+		assertTrue(new Funcionario("Teste").isSome());
+	}
+	
 	@Test @DisplayName("Funcionário é pessoa.")
 	void funcionarioPessoa() {
 		Endereco endereco1 = new Endereco();
