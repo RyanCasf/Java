@@ -85,4 +85,15 @@ class IgualTeste {
 		igual.setChave(1l);
 		assertEquals("Chave=1", igual.toString());
 	}
+	
+	@Test @DisplayName("hashCode para chave nula.")
+	void hashCodeNulo() {
+		assertEquals(31, igual.hashCode());
+	}
+	
+	@Test @DisplayName("hashCode para chave.")
+	void igualHashCode() {
+		igual.setChave(1l);
+		assertEquals(32, igual.hashCode());
+	}
 }

@@ -13,6 +13,15 @@ public class Igual {
 	}
 	
 	@Override
+	public int hashCode() {
+		final int PRIME = 31;
+		final int RESULT = 1;
+		final int HASH_CODE_CHAVE = (chave != null ? chave.hashCode() : 0);
+		
+		return PRIME * RESULT + HASH_CODE_CHAVE;
+	}
+	
+	@Override
 	public boolean equals(Object obj) {
 		if (obj == null) return false;
 		if (this == obj) return true;
