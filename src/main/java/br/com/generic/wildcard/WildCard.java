@@ -1,4 +1,4 @@
-package br.com.generic;
+package br.com.generic.wildcard;
 
 import java.util.List;
 

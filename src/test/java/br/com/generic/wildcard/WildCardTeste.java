@@ -1,6 +1,6 @@
-package br.com.generic;
+package br.com.generic.wildcard;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 import java.util.ArrayList;
 import java.util.Arrays;
