@@ -1,6 +1,6 @@
 package br.com.first.enumeration;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -13,7 +13,8 @@ class EnumerationTeste {
 	
 	@Test @DisplayName("Retonando valores.")
 	void retorno() {
-		assertTrue(Enumeration.values().length > 0);
+		final int QUANTIDADE_VALORES = Enumeration.values().length;
+		assertEquals(3, QUANTIDADE_VALORES);
 	}
 	
 	@Test @DisplayName("Comparação de igualdade de escrita para toString.")
