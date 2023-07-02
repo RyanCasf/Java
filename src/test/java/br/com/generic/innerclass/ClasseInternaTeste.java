@@ -1,5 +1,7 @@
 package br.com.generic.innerclass;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -19,6 +21,9 @@ class ClasseInternaTeste {
 	
 	@Test @DisplayName("Verificar valor do atributo nome.")
 	void atributoNome() {
+		ClasseInterna.ClasseDentro classeDentro = interna.new ClasseDentro();
+		final String NOME = classeDentro.getNome();
 		
+		assertEquals("Nome", NOME);
 	}
 }

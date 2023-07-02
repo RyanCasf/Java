@@ -5,8 +5,8 @@ public class ClasseInterna {
 	private String nome = "Nome";
 	
 	public class ClasseDentro {
-		public void exibir() {
-			System.out.println("Teste...");
+		public String getNome() {
+			return nome;
 		}
 	}
 }
