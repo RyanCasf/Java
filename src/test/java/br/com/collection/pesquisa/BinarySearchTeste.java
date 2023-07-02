@@ -11,7 +11,7 @@ import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
 @TestInstance(Lifecycle.PER_CLASS)
-@DisplayName("Binary Search")
+@DisplayName("Collection: Binary Search")
 class BinarySearchTeste {
 	
 	private BinarySearch search;

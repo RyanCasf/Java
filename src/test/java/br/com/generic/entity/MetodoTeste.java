@@ -14,7 +14,7 @@ import org.junit.jupiter.api.TestInstance.Lifecycle;
 import br.com.generic.type.Object;
 
 @TestInstance(Lifecycle.PER_CLASS)
-@DisplayName("Método")
+@DisplayName("Generic: Método")
 class MetodoTeste {
 	
 	private Metodo metodo;

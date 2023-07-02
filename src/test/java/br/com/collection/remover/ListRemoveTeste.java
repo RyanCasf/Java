@@ -14,7 +14,7 @@ import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
 @TestInstance(Lifecycle.PER_CLASS)
-@DisplayName("List Remove")
+@DisplayName("Collection: List Remove")
 class ListRemoveTeste {
 	
 	private ListRemove listRemove;

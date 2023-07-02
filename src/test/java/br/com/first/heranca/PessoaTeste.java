@@ -34,7 +34,7 @@ class PessoaTeste {
 		assertEquals(3, pessoa.getEnderecos().size());
 	}
 	
-	@Test @DisplayName("Retorno falso")
+	@Test @DisplayName("Retorno falso.")
 	void retornoFalso() {
 		assertFalse(new Pessoa("pessoa").isSome());
 	}

@@ -13,7 +13,7 @@ import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
 @TestInstance(Lifecycle.PER_CLASS)
-@DisplayName("WildCard")
+@DisplayName("Generic: WildCard")
 class WildCardTeste {
 	
 	private WildCard wildCard;

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
 @TestInstance(Lifecycle.PER_CLASS)
-@DisplayName("Carro Rentável Service")
+@DisplayName("Generic: Carro Rentável Service")
 class CarroRentavelServiceTeste {
 	
 	private CarroRentavelService service;

@@ -19,7 +19,7 @@ class GottoTeste {
 		gotto = new Gotto();
 	}
 	
-	@Test
+	@Test @DisplayName("GoTo old.")
 	void main() {
 		assertDoesNotThrow(() -> gotto.make());
 	}

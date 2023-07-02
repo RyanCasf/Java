@@ -9,7 +9,7 @@ import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
 @TestInstance(Lifecycle.PER_CLASS)
-@DisplayName("Classe Interna")
+@DisplayName("Generic: Classe Interna")
 class ClasseInternaTeste {
 	
 	private ClasseInterna interna;

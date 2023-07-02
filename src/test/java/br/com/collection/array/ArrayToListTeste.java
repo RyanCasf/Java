@@ -10,7 +10,7 @@ import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
 @TestInstance(Lifecycle.PER_CLASS)
-@DisplayName("Array To List")
+@DisplayName("Collection: Array To List")
 class ArrayToListTeste {
 	
 	@Test @DisplayName("asList nula.")
