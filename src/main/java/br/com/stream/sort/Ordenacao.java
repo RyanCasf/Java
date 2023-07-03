@@ -13,10 +13,6 @@ public class Ordenacao {
 	}
 	
 	public static List<Pessoa> ordenarPorId(List<Pessoa> pessoas) {
-		if (pessoas == null) {
-			throw new NullPointerException("list null");
-		}
-		
 		if (pessoas.isEmpty()) {
 			return pessoas;
 		}

@@ -41,6 +41,7 @@ class FuncionarioTeste {
 		
 		assertEquals(3, funcionario.getEnderecos().size());
 		assertEquals(BigDecimal.TEN, funcionario.getSalario());
+		assertTrue(funcionario.isSome());
 	}
 	
 	@Test @DisplayName("Retorno falso.")

@@ -23,6 +23,12 @@ class WildCardTeste {
 		wildCard = new WildCard();
 	}
 	
+	@Test @DisplayName("Printar consultar com animais nulo.")
+	void printConsultarComAnimaisNulo() {
+		Animal[] animais = null;
+		assertDoesNotThrow(() -> wildCard.printConsultar(animais));
+	}
+	
 	@Test @DisplayName("Printar consultar com animais vazio.")
 	void printConsultarComAnimaisVazio() {
 		Animal[] animais = new Animal[0];
@@ -45,6 +51,12 @@ class WildCardTeste {
 	void printConsultarComSucessoAnimais() {
 		Animal[] animais = {new Cachorro(), new Gato()};
 		wildCard.printConsultar(animais);
+	}
+	
+	@Test @DisplayName("Printar consultar list com animais nula.")
+	void printConsultarListComAnimaisNula() {
+		List<Animal> animais = null;
+		assertDoesNotThrow(() -> wildCard.printConsultar(animais));
 	}
 	
 	@Test @DisplayName("Printar consultar list com animais vazio.")
