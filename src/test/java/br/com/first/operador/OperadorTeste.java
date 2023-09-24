@@ -15,7 +15,7 @@ class OperadorTeste {
     private Operador operador;
     
     @BeforeEach
-    void novo() {
+    void init() {
     	operador = new Operador();
     }
 

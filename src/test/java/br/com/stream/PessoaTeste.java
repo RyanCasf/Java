@@ -16,7 +16,7 @@ class PessoaTeste {
 	private Pessoa pessoa;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		pessoa = new Pessoa(1l, null, null, false);
 	}
 	

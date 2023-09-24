@@ -15,7 +15,7 @@ class ClasseInternaEstaticaTeste {
 	private ClasseInternaEstatica classeInternaEstatica;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		classeInternaEstatica = new ClasseInternaEstatica();
 	}
 	

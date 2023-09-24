@@ -15,7 +15,7 @@ class ClasseInternaTeste {
 	private ClasseInterna interna;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		interna = new ClasseInterna();
 	}
 	

@@ -16,7 +16,7 @@ class EnderecoTeste {
 	private Endereco endereco;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		endereco = new Endereco();
 	}
 	

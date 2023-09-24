@@ -18,7 +18,7 @@ class RentavelServiceTeste {
 	private RentavelService<Object> service;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		List<Object> lista = new ArrayList<Object>();
 		lista.add(new Object("Teste01"));
 		lista.add(new Object("Teste02"));

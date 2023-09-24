@@ -15,7 +15,7 @@ class GottoTeste {
 	private Gotto gotto;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		gotto = new Gotto();
 	}
 	

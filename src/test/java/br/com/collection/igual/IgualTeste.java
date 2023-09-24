@@ -18,7 +18,7 @@ class IgualTeste {
 	private Igual igual;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		igual = new Igual();
 	}
 	

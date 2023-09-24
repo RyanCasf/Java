@@ -19,7 +19,7 @@ class WildCardTeste {
 	private WildCard wildCard;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		wildCard = new WildCard();
 	}
 	

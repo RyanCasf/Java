@@ -15,7 +15,7 @@ class ComportamentoTeste {
 	private Comportamento comportamento;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		comportamento = new Comportamento();
 	}
 	

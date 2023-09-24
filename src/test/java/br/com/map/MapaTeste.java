@@ -15,7 +15,7 @@ class MapaTeste {
 	private Mapa mapa;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		mapa = new Mapa();
 	}
 	

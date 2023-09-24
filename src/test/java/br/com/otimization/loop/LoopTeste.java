@@ -16,7 +16,7 @@ class LoopTeste {
 	private Loop loop;
 
 	@BeforeEach
-	void novo() {
+	void init() {
 		loop = new Loop();
 	}
 	

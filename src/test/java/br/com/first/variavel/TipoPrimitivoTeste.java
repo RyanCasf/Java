@@ -17,7 +17,7 @@ class TipoPrimitivoTeste {
 	private TipoPrimitivo inicial;
 
 	@BeforeEach
-	void novo() {
+	void init() {
 		inicial = new TipoPrimitivo();
 	}
 	

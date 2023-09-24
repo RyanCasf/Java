@@ -15,7 +15,7 @@ class CarroRentavelServiceTeste {
 	private CarroRentavelService service;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		service = new CarroRentavelService();
 	}
 	

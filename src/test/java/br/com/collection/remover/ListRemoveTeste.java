@@ -20,7 +20,7 @@ class ListRemoveTeste {
 	private ListRemove listRemove;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		List<BigDecimal> lista = new ArrayList<BigDecimal>(Arrays.asList(
 				BigDecimal.valueOf(1), BigDecimal.valueOf(5), BigDecimal.valueOf(0)
 		));

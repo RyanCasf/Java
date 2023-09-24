@@ -15,7 +15,7 @@ class BarcoRentavelServiceTeste {
 	private BarcoRentavelService service;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		service = new BarcoRentavelService();
 	}
 	

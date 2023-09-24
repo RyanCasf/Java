@@ -17,7 +17,7 @@ class ContratadoTeste {
 	private Contratado contratado;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		contratado = new Contratado();
 	}
 	

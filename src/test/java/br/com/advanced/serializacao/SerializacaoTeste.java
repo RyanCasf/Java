@@ -14,7 +14,7 @@ class SerializacaoTeste {
     private Aluno aluno;
     
     @BeforeAll
-    void novo() {
+    void initAll() {
     	aluno  = new Aluno(1l, "teste", "12345");
     	
     	Turma turma = new Turma();

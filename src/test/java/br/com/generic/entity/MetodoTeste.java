@@ -20,7 +20,7 @@ class MetodoTeste {
 	private Metodo metodo;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		metodo = new Metodo();
 	}
 	

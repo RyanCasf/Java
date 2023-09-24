@@ -20,7 +20,7 @@ class ListaTeste {
 	private Lista lista;
 	
 	@BeforeEach
-	void comecar() {
+	void init() {
 		lista = new Lista();
 	}
 	

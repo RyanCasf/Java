@@ -15,7 +15,7 @@ class ClasseAnonimaTeste {
 	private ClasseAnonima classeAnonima;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		classeAnonima = new ClasseAnonima();
 	}
 	

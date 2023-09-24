@@ -17,7 +17,7 @@ class BinarySearchTeste {
 	private BinarySearch search;
 	
 	@BeforeEach
-	void novo() {
+	void init() {
 		search = new BinarySearch(Arrays.asList(0,1,2,3,4,5));
 	}
 	

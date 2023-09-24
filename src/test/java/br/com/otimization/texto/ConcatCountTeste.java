@@ -15,7 +15,7 @@ class ConcatCountTeste {
 	private ConcatCount concat;
 
 	@BeforeEach
-	void novo() {
+	void init() {
 		concat = new ConcatCount();
 	}
 

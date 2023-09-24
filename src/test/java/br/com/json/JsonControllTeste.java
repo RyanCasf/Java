@@ -14,7 +14,7 @@ class JsonControllTeste {
 	private JsonControll controll;
 	
 	@BeforeEach
-	void novoTeste() {
+	void init() {
 		controll = new JsonControll();
 	}
 	
