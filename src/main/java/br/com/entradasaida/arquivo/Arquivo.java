@@ -10,8 +10,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import util.conf.Configuracao;
-
 public class Arquivo {
 	
 	private Arquivo() {
@@ -29,7 +27,6 @@ public class Arquivo {
 
 		File file = new File(CAMINHO);
 		boolean isCriado = file.createNewFile();
-		Configuracao.imprimir("Arquivo de entrada e saída criado: " + isCriado);
 
 		if (isCriado) {
 			try (FileWriter fileWriter = new FileWriter(file);
@@ -46,7 +43,7 @@ public class Arquivo {
 
 				String label;
 				while ((label = bufferedReader.readLine()) != null) {
-					Configuracao.imprimir(label);
+					System.out.printf("%s", label);
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
