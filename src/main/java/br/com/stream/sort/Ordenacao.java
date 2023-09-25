@@ -1,10 +1,10 @@
 package br.com.stream.sort;
 
+import br.com.util.model.Usuario;
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import br.com.stream.Pessoa;
 
 public class Ordenacao {
 	
@@ -12,11 +12,11 @@ public class Ordenacao {
 		throw new IllegalStateException("Classe utilitária!");
 	}
 	
-	public static List<Pessoa> ordenarPorId(List<Pessoa> pessoas) {
-		if (pessoas.isEmpty()) {
-			return pessoas;
+	public static List<Usuario> ordenarPorId(List<Usuario> usuarios) {
+		if (usuarios.isEmpty()) {
+			return usuarios;
 		}
 		
-		return pessoas.stream().sorted(Comparator.comparing(Pessoa::getId)).collect(Collectors.toList());
+		return usuarios.stream().sorted(Comparator.comparing(Usuario::getCpf)).collect(Collectors.toList());
 	}
 }

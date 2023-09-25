@@ -1,10 +1,10 @@
 package br.com.stream.group;
 
+import br.com.util.model.Usuario;
+
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
-import br.com.stream.Pessoa;
 
 public class Grupo {
 	
@@ -12,12 +12,12 @@ public class Grupo {
 		throw new IllegalStateException("Classe utilitária!");
 	}
 	
-	public static Map<Boolean, List<Pessoa>> separarEmGrupo(List<Pessoa> pessoas) {
-		if (pessoas == null) {
+	public static Map<Boolean, List<Usuario>> separarEmGrupo(List<Usuario> usuarios) {
+		if (usuarios == null) {
 			throw new NullPointerException("list null");
 		}
 		
-		return pessoas.stream()
-				.collect(Collectors.groupingBy(Pessoa::isCancelado));
+		return usuarios.stream()
+				.collect(Collectors.groupingBy(Usuario::isCancelado));
 	}
 }

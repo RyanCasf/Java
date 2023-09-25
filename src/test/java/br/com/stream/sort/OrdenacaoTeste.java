@@ -6,36 +6,41 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.util.model.Usuario;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
-import br.com.stream.Pessoa;
-
 @TestInstance(Lifecycle.PER_CLASS)
 @DisplayName("Stream: Ordenação")
 class OrdenacaoTeste {
-	
+
+	private List<Usuario> pessoasOrdenacao;
+
+	@BeforeAll
+	void initAll() {
+		pessoasOrdenacao = List.of(
+				new Usuario("3", "C", "c"),
+				new Usuario("0", "A", "a"),
+				new Usuario("2", "Zz", "z"),
+				new Usuario("1", "B", "b")
+		);
+	}
+
 	@Test @DisplayName("Ordenar com lista vazia.")
 	void ordenarVazia() {
-		assertDoesNotThrow(() -> Ordenacao.ordenarPorId(new ArrayList<Pessoa>()));
+		assertDoesNotThrow(() -> Ordenacao.ordenarPorId(new ArrayList<Usuario>()));
 	}
 	
-	@Test @DisplayName("Ordenar por ID.")
-	void ordenarId() {
-		List<Pessoa> pessoas = List.of(
-				new Pessoa(3, "C", "c", false),
-				new Pessoa(0, "A", "a", false),
-				new Pessoa(2, "Zz", "zz", false),
-				new Pessoa(1, "B", "b", false)
-		);
+	@Test @DisplayName("Ordenar por CPF.")
+	void ordenarCpf() {
+		pessoasOrdenacao = Ordenacao.ordenarPorId(pessoasOrdenacao);
 		
-		pessoas = Ordenacao.ordenarPorId(pessoas);
-		
-		final int QUANTIDADE_ORDENACAO = pessoas.size();
-		for (int i=0; i<QUANTIDADE_ORDENACAO; i++) {
-			assertEquals(i, pessoas.get(i).getId());
-		}
+		assertEquals("a", pessoasOrdenacao.get(0).getCpf());
+		assertEquals("b", pessoasOrdenacao.get(1).getCpf());
+		assertEquals("c", pessoasOrdenacao.get(2).getCpf());
+		assertEquals("z", pessoasOrdenacao.get(3).getCpf());
 	}
 }

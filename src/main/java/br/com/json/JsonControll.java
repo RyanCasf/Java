@@ -1,5 +1,6 @@
 package br.com.json;
 
+import br.com.util.model.Usuario;
 import com.google.gson.Gson;
 
 public class JsonControll implements JsonControllInterface {

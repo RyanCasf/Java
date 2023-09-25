@@ -1,10 +1,10 @@
 package br.com.stream.match;
 
+import br.com.util.model.Usuario;
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
-
-import br.com.stream.Pessoa;
 
 public class Logica {
 	
@@ -12,45 +12,45 @@ public class Logica {
 		throw new IllegalStateException("Classe utilitária!");
 	}
 	
-	public static boolean isTodasPessoaIdMaior10(List<Pessoa> pessoas) {
-		if (pessoas == null) {
+	public static boolean isTodasPessoaIdMaior10(List<Usuario> usuarios) {
+		if (usuarios == null) {
 			throw new NullPointerException("list null");
 		}
 		
-		return pessoas.stream().allMatch(p -> p.getId() > 10);
+		return usuarios.stream().allMatch(p -> p.getId() > 10);
 	}
 	
-	public static boolean isAlgumaPessoaIdMaior10(List<Pessoa> pessoas) {
-		if (pessoas == null) {
+	public static boolean isAlgumaPessoaIdMaior10(List<Usuario> usuarios) {
+		if (usuarios == null) {
 			throw new NullPointerException("list null");
 		}
 		
-		return pessoas.stream().anyMatch(p -> p.getId() > 10);
+		return usuarios.stream().anyMatch(p -> p.getId() > 10);
 	}
 	
-	public static boolean isNinguemPessoaIdMaior10(List<Pessoa> pessoas) {
-		if (pessoas == null) {
+	public static boolean isNinguemPessoaIdMaior10(List<Usuario> usuarios) {
+		if (usuarios == null) {
 			throw new NullPointerException("list null");
 		}
 		
-		return pessoas.stream().noneMatch(p -> p.getId() > 10);
+		return usuarios.stream().noneMatch(p -> p.getId() > 10);
 	}
 	
-	public static Optional<Pessoa> pegarMenorId(List<Pessoa> pessoas) {
+	public static Optional<Usuario> pegarMenorId(List<Usuario> usuarios) {
+		if (usuarios == null) {
+			throw new NullPointerException("list null");
+		}
+		
+		return usuarios.stream()
+				.min(Comparator.comparing(Usuario::getId));
+	}
+	
+	public static Optional<Usuario> pegarMaiorId(List<Usuario> pessoas) {
 		if (pessoas == null) {
 			throw new NullPointerException("list null");
 		}
 		
 		return pessoas.stream()
-				.min(Comparator.comparing(Pessoa::getId));
-	}
-	
-	public static Optional<Pessoa> pegarMaiorId(List<Pessoa> pessoas) {
-		if (pessoas == null) {
-			throw new NullPointerException("list null");
-		}
-		
-		return pessoas.stream()
-				.max(Comparator.comparing(Pessoa::getId));
+				.max(Comparator.comparing(Usuario::getId));
 	}
 }

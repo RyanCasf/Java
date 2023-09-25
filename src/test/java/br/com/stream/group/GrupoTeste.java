@@ -5,12 +5,11 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.util.model.Usuario;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
-
-import br.com.stream.Pessoa;
 
 @TestInstance(Lifecycle.PER_CLASS)
 @DisplayName("Stream: Grupo")
@@ -23,26 +22,26 @@ class GrupoTeste {
 	
 	@Test @DisplayName("Separar em Grupo vazio.")
 	void separarEmGrupoVazio() {
-		assertDoesNotThrow(() -> Grupo.separarEmGrupo(new ArrayList<Pessoa>()));
+		assertDoesNotThrow(() -> Grupo.separarEmGrupo(new ArrayList<>()));
 	}
 	
 	@Test @DisplayName("Separar em Grupo único.")
 	void separarEmGrupoUnico() {
-		List<Pessoa> pessoas = List.of(
-				new Pessoa(1, "A", "a", false),
-				new Pessoa(2, "B", "b", false)
+		List<Usuario> usuarios = List.of(
+				new Usuario("1", "A", "a"),
+				new Usuario("2", "B", "b")
 		);
 		
-		assertEquals(1, Grupo.separarEmGrupo(pessoas).size());
+		assertEquals(1, Grupo.separarEmGrupo(usuarios).size());
 	}
 	
 	@Test @DisplayName("Separar em Grupo duplo.")
 	void separarEmGrupoDuplo() {
-		List<Pessoa> pessoas = List.of(
-				new Pessoa(1, "A", "a", false),
-				new Pessoa(2, "B", "b", true)
+		List<Usuario> usuarios = List.of(
+				new Usuario(1, "A", "a", false),
+				new Usuario(2, "B", "b", true)
 		);
 		
-		assertEquals(2, Grupo.separarEmGrupo(pessoas).size());
+		assertEquals(2, Grupo.separarEmGrupo(usuarios).size());
 	}
 }
