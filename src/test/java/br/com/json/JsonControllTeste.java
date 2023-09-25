@@ -1,6 +1,7 @@
 package br.com.json;
 
-import org.junit.jupiter.api.Assertions;
+import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -20,13 +21,14 @@ class JsonControllTeste {
 	
 	@Test @DisplayName("Write para usuário nulo.")
 	void writeUsuarioNulo() {
-		Assertions.assertThrows(NullPointerException.class, () -> controll.write(null));
+		final NullPointerException e = assertThrows(NullPointerException.class, () -> controll.write(null));
+		assertEquals(e.getMessage(), "usuario is null");
 	}
 	
 	@Test @DisplayName("Write para usuário novo.")
 	void writeUsuarioNovo() {
 		String json = controll.write(new Usuario());
-		Assertions.assertEquals("{}", json);
+		assertEquals("{}", json);
 	}
 	
 	@Test @DisplayName("Write para usuário do CPF.")
@@ -35,7 +37,7 @@ class JsonControllTeste {
 		usuario.setCpf("cpf");
 		
 		String json = controll.write(usuario);
-		Assertions.assertEquals("{\"cpf\":\"cpf\"}", json);
+		assertEquals("{\"cpf\":\"cpf\"}", json);
 	}
 	
 	@Test @DisplayName("Write para usuário de login.")
@@ -44,7 +46,7 @@ class JsonControllTeste {
 		usuario.setLogin("login");
 		
 		String json = controll.write(usuario);
-		Assertions.assertEquals("{\"login\":\"login\"}", json);
+		assertEquals("{\"login\":\"login\"}", json);
 	}
 	
 	@Test @DisplayName("Write para usuário de senha.")
@@ -53,7 +55,7 @@ class JsonControllTeste {
 		usuario.setSenha("senha");
 		
 		String json = controll.write(usuario);
-		Assertions.assertEquals("{\"senha\":\"senha\"}", json);
+		assertEquals("{\"senha\":\"senha\"}", json);
 	}
 	
 	@Test @DisplayName("Write para usuário para todos atributos.")
@@ -64,6 +66,6 @@ class JsonControllTeste {
 		usuario.setSenha("senha");
 		
 		String json = controll.write(usuario);
-		Assertions.assertEquals("{\"login\":\"login\",\"senha\":\"senha\",\"cpf\":\"cpf\"}", json);
+		assertEquals("{\"login\":\"login\",\"senha\":\"senha\",\"cpf\":\"cpf\"}", json);
 	}
 }
