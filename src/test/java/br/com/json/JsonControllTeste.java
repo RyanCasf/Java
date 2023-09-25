@@ -13,22 +13,22 @@ import org.junit.jupiter.api.TestInstance.Lifecycle;
 @DisplayName("Notation: Json")
 class JsonControllTeste {
 	
-	private JsonControll controll;
+	private JsonControllerInterface<Usuario> control;
 	
 	@BeforeEach
 	void init() {
-		controll = new JsonControll();
+		control = new JsonController();
 	}
 	
 	@Test @DisplayName("Write para usuário nulo.")
 	void writeUsuarioNulo() {
-		final NullPointerException e = assertThrows(NullPointerException.class, () -> controll.write(null));
-		assertEquals(e.getMessage(), "usuario is null");
+		final NullPointerException e = assertThrows(NullPointerException.class, () -> control.write(null));
+		assertEquals(e.getMessage(), "entity is null");
 	}
 	
 	@Test @DisplayName("Write para usuário novo.")
 	void writeUsuarioNovo() {
-		String json = controll.write(new Usuario());
+		String json = control.write(new Usuario());
 		assertEquals("{}", json);
 	}
 	
@@ -37,7 +37,7 @@ class JsonControllTeste {
 		Usuario usuario = new Usuario();
 		usuario.setCpf("cpf");
 		
-		String json = controll.write(usuario);
+		String json = control.write(usuario);
 		assertEquals("{\"cpf\":\"cpf\"}", json);
 	}
 	
@@ -46,7 +46,7 @@ class JsonControllTeste {
 		Usuario usuario = new Usuario();
 		usuario.setLogin("login");
 		
-		String json = controll.write(usuario);
+		String json = control.write(usuario);
 		assertEquals("{\"login\":\"login\"}", json);
 	}
 	
@@ -55,7 +55,7 @@ class JsonControllTeste {
 		Usuario usuario = new Usuario();
 		usuario.setSenha("senha");
 		
-		String json = controll.write(usuario);
+		String json = control.write(usuario);
 		assertEquals("{\"senha\":\"senha\"}", json);
 	}
 	
@@ -66,7 +66,23 @@ class JsonControllTeste {
 		usuario.setLogin("login");
 		usuario.setSenha("senha");
 		
-		String json = controll.write(usuario);
+		String json = control.write(usuario);
 		assertEquals("{\"login\":\"login\",\"senha\":\"senha\",\"cpf\":\"cpf\"}", json);
+	}
+
+	@Test @DisplayName("Write to String Wrapper.")
+	void writeToStringWrapper() {
+		JsonControllerInterface<String> controlTemp = new JsonController();
+
+		String json = controlTemp.write("Teste");
+		assertEquals("\"Teste\"", json);
+	}
+
+	@Test @DisplayName("Write to Double Wrapper.")
+	void writeToDoubleWrapper() {
+		JsonControllerInterface<Double> controlTemp = new JsonController();
+
+		String json = controlTemp.write(1d);
+		assertEquals("1.0", json);
 	}
 }
